@@ -51,6 +51,12 @@ const nextConfig: NextConfig = {
         hostname: 'goodwill-electrical.co.uk',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'resource-erectors.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

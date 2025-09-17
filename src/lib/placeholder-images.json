@@ -12,7 +12,7 @@
     { "id": "repair1", "description": "Electrician working on an electrical panel", "imageUrl": "https://cosmosparks.com/wp-content/uploads/2021/10/Cosmosparks-ElectricaElectrical-Services.jpg", "imageHint": "electrician panel" },
     { "id": "repair2", "description": "Close up of an industrial electrical panel with wiring", "imageUrl": "https://picsum.photos/seed/9/600/400", "imageHint": "electrical panel" },
     { "id": "repair3", "description": "Engineer working on high voltage power lines", "imageUrl": "https://picsum.photos/seed/10/600/400", "imageHint": "powerline engineer" },
-    { "id": "construction1", "description": "Civil engineer overseeing concrete foundation pour", "imageUrl": "https://picsum.photos/seed/11/600/400", "imageHint": "civil engineer" },
+    { "id": "construction1", "description": "Civil engineer overseeing concrete foundation pour", "imageUrl": "https://resource-erectors.com/wp-content/uploads/2024/05/Kaizen-Construction-Civil-Engineering-1024x704-1.jpg", "imageHint": "civil engineer" },
     { "id": "construction2", "description": "Robotic welding arm in a fabrication plant", "imageUrl": "https://picsum.photos/seed/12/600/400", "imageHint": "robotic welding" },
     { "id": "construction3", "description": "3D model of a building structure on a computer screen", "imageUrl": "https://picsum.photos/seed/13/600/400", "imageHint": "BIM model" },
     { "id": "team1", "description": "Portrait of a senior project engineer", "imageUrl": "https://picsum.photos/seed/20/400/400", "imageHint": "project engineer" },
