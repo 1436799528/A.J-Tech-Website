@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+import { useState } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -12,6 +13,11 @@ import { navLinks } from '@/lib/data';
 
 export function Header() {
   const pathname = usePathname();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleLinkClick = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -58,7 +64,7 @@ export function Header() {
                 AJ Tech
               </span>
           </Link>
-          <Sheet>
+          <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
                 <Menu className="h-5 w-5" />
@@ -67,7 +73,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right">
               <div className="grid gap-6 text-lg font-medium p-6">
-                <Link href="/" className="flex items-center space-x-2">
+                <Link href="/" className="flex items-center space-x-2" onClick={handleLinkClick}>
                    <Image 
                       src="/logo.png" 
                       alt="A.J Tech Logo" 
@@ -83,6 +89,7 @@ export function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
+                    onClick={handleLinkClick}
                     className={cn(
                       'transition-colors hover:text-primary block',
                        pathname === link.href ? 'text-foreground' : 'text-muted-foreground'
