@@ -6,7 +6,7 @@
     { "id": "solar1", "description": "Rooftop solar panel grid with city background", "imageUrl": "https://picsum.photos/seed/2/600/400", "imageHint": "rooftop solar" },
     { "id": "solar2", "description": "Engineer inspecting a solar farm", "imageUrl": "https://picsum.photos/seed/3/600/400", "imageHint": "solar engineer" },
     { "id": "solar3", "description": "Close-up of a solar panel with sun glare", "imageUrl": "https://picsum.photos/seed/4/600/400", "imageHint": "solar panel" },
-    { "id": "contracting1", "description": "Structural engineer analyzing building framework", "imageUrl": "https://picsum.photos/seed/5/600/400", "imageHint": "structural engineer" },
+    { "id": "contracting1", "description": "High voltage industrial electrical project", "imageUrl": "https://tristateec.com/wp-content/uploads/2021/04/2021-03-working-on-high-voltage-industrial-electrical-project-chattnooga.jpg", "imageHint": "industrial electrical" },
     { "id": "contracting2", "description": "Architect and engineer discussing blueprints on a tablet", "imageUrl": "https://picsum.photos/seed/6/600/400", "imageHint": "digital blueprints" },
     { "id": "contracting3", "description": "A complex construction project with cranes", "imageUrl": "https://picsum.photos/seed/7/600/400", "imageHint": "complex construction" },
     { "id": "repair1", "description": "Electrician working on an electrical panel", "imageUrl": "https://cosmosparks.com/wp-content/uploads/2021/10/Cosmosparks-ElectricaElectrical-Services.jpg", "imageHint": "electrician panel" },
