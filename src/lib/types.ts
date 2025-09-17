@@ -20,3 +20,13 @@ export type TeamMember = {
   bio: string;
   image: string;
 };
+
+export type BlogPost = {
+  slug: string;
+  title: string;
+  date: string;
+  author: string;
+  summary: string;
+  content: string;
+  image: string;
+};
