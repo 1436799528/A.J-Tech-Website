@@ -18,7 +18,7 @@ export default function AboutPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mb-16 md:mb-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mb-16 md:mb-24 max-w-5xl mx-auto">
         {aboutImage && (
           <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl w-full">
               <Image src={aboutImage.imageUrl} alt={aboutImage.description} fill className="object-cover" data-ai-hint={aboutImage.imageHint}/>

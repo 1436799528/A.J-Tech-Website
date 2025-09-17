@@ -42,14 +42,14 @@ export default function BlogPage() {
                   <Link href={`/blog/${post.slug}`} className="hover:text-primary transition-colors">{post.title}</Link>
                 </CardTitle>
                 <CardDescription>
-                  <span>By {post.author}</span> | <span>{format(new Date(post.date), 'MMMM d, yyyy')}</span>
+                  <span className="text-xs">By {post.author}</span> | <span className="text-xs">{format(new Date(post.date), 'MMMM d, yyyy')}</span>
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground">{post.summary}</p>
+                <p className="text-muted-foreground text-sm">{post.summary}</p>
               </CardContent>
               <div className="p-6 pt-0">
-                <Button asChild variant="link" className="p-0 h-auto">
+                <Button asChild variant="link" className="p-0 h-auto text-sm">
                   <Link href={`/blog/${post.slug}`}>
                     Read More
                   </Link>

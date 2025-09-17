@@ -46,7 +46,7 @@ export default function ServicesPage() {
                         </CardContent>
                     </div>
                     <div className="mt-auto p-6 pt-0">
-                        <Button variant="outline">View Details</Button>
+                        <Button variant="link" className="p-0 h-auto">View Details</Button>
                     </div>
                 </Link>
             </Card>

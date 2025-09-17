@@ -77,7 +77,7 @@ export default function Home() {
                                 <service.Icon className="h-8 w-8 text-primary" />
                             </div>
                             <CardHeader className="p-0 mb-2">
-                            <CardTitle className="text-xl">{service.title}</CardTitle>
+                            <CardTitle className="text-lg md:text-xl">{service.title}</CardTitle>
                             </CardHeader>
                             <CardContent className="p-0 flex-grow">
                             <p className="text-muted-foreground text-sm">{service.description}</p>
@@ -99,7 +99,7 @@ export default function Home() {
       {/* Why Choose Us */}
       <section className="py-16 md:py-24">
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="md:pr-8">
                 <h2 className="text-3xl md:text-4xl font-bold text-primary">Why Choose A.J. Tech?</h2>
                 <p className="mt-4 text-base md:text-lg text-muted-foreground">
                     We are more than just a service provider; we are your dedicated partner in achieving excellence. Our commitment is to deliver unparalleled quality and innovative solutions.
