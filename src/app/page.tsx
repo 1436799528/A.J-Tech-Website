@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative w-full h-[60vh] md:h-[80vh]">
+      <section className="relative w-full h-[70vh] md:h-[80vh]">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
@@ -28,18 +28,18 @@ export default function Home() {
           />
         )}
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative container h-full flex flex-col items-center justify-center text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+        <div className="relative container h-full flex flex-col items-center justify-center text-center text-white px-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
             A.J TECH SOLUTIONS
           </h1>
-          <p className="mt-4 max-w-2xl text-lg md:text-xl text-neutral-200">
+          <p className="mt-4 max-w-3xl text-base sm:text-lg md:text-xl text-neutral-200">
             We provide comprehensive electrical solutions for residential and commercial customers, ensuring that your needs are met with efficiency and excellence.
           </p>
-          <div className="mt-8 flex gap-4">
-            <Button size="lg" asChild>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0">
+            <Button size="lg" asChild className="w-full sm:w-auto">
               <Link href="/contact">Contact Us</Link>
             </Button>
-            <Button size="lg" variant="secondary" asChild>
+            <Button size="lg" variant="secondary" asChild className="w-full sm:w-auto">
               <Link href="/services">Our Services</Link>
             </Button>
           </div>
@@ -58,11 +58,14 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.slice(0, 4).map((service) => (
                 <Card key={service.slug} className="flex flex-col text-center items-center transition-transform transform hover:-translate-y-2 hover:shadow-primary/20 shadow-lg bg-card overflow-hidden">
-                  <Link href={`/services/${service.slug}`} className="w-full">
-                    <CardHeader>
+                  <Link href={`/services/${service.slug}`} className="w-full p-6 flex flex-col items-center h-full">
+                    <div className="bg-primary/10 p-3 rounded-full mb-4">
+                        <service.Icon className="h-8 w-8 text-primary" />
+                    </div>
+                    <CardHeader className="p-0 mb-2">
                       <CardTitle>{service.title}</CardTitle>
                     </CardHeader>
-                    <CardContent className="flex-grow">
+                    <CardContent className="p-0 flex-grow">
                       <p className="text-muted-foreground">{service.description}</p>
                     </CardContent>
                   </Link>
@@ -110,7 +113,7 @@ export default function Home() {
                 </ul>
             </div>
             {whyUsImage && (
-              <div className="relative h-80 rounded-lg overflow-hidden shadow-xl">
+              <div className="relative h-80 rounded-lg overflow-hidden shadow-xl aspect-video md:aspect-auto">
                   <Image src={whyUsImage.imageUrl} alt={whyUsImage.description} fill className="object-cover" data-ai-hint={whyUsImage.imageHint} />
               </div>
             )}

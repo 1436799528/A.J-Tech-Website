@@ -19,7 +19,7 @@ export default function AboutPage() {
 
       <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
         {aboutImage && (
-          <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+          <div className="relative h-96 rounded-lg overflow-hidden shadow-xl aspect-video md:aspect-auto">
               <Image src={aboutImage.imageUrl} alt={aboutImage.description} fill className="object-cover" data-ai-hint={aboutImage.imageHint}/>
           </div>
         )}
@@ -53,7 +53,7 @@ export default function AboutPage() {
                         <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                     </Avatar>
                 )}
-                <h3 className="text-lg font-semibold">{member.name}</h3>
+                <h3 className="text-xl font-semibold">{member.name}</h3>
                 <p className="text-primary text-sm">{member.role}</p>
                 <p className="text-muted-foreground mt-2 text-sm">{member.bio}</p>
               </CardContent>

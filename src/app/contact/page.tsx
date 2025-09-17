@@ -1,5 +1,5 @@
 import { ContactForm } from '@/components/contact-form';
-import { Mail, Phone, Globe } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -11,15 +11,15 @@ export default function ContactPage() {
         </p>
       </div>
       
-      <div className="grid md:grid-cols-5 gap-12">
-        <div className="md:col-span-2 space-y-8">
+      <div className="grid md:grid-cols-2 gap-12">
+        <div className="space-y-8">
             <div className="flex items-start gap-4">
                 <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
                     <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                     <h3 className="text-xl font-semibold">Email Us</h3>
-                    <a href="mailto:a.j.engr.tech@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">a.j.engr.tech@gmail.com</a>
+                    <a href="mailto:a.j.engr.tech@gmail.com" className="text-muted-foreground hover:text-primary transition-colors break-all">a.j.engr.tech@gmail.com</a>
                 </div>
             </div>
             <div className="flex items-start gap-4">
@@ -32,7 +32,7 @@ export default function ContactPage() {
                 </div>
             </div>
         </div>
-        <div className="md:col-span-3">
+        <div>
             <ContactForm />
         </div>
       </div>

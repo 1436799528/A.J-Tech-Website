@@ -26,8 +26,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     <article className="container py-16 md:py-24">
       <div className="max-w-4xl mx-auto">
         <header className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">{post.title}</h1>
-          <div className="flex items-center space-x-6 text-muted-foreground">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">{post.title}</h1>
+          <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 text-muted-foreground">
             <div className="flex items-center space-x-2">
               <User className="h-4 w-4" />
               <span>{post.author}</span>
@@ -40,7 +40,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         </header>
 
         {postImage && (
-          <div className="relative h-96 rounded-lg overflow-hidden shadow-xl mb-12">
+          <div className="relative h-64 md:h-96 rounded-lg overflow-hidden shadow-xl mb-12">
             <Image
               src={postImage.imageUrl}
               alt={post.title}
@@ -52,7 +52,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         )}
 
         <div 
-          className="prose prose-lg max-w-none prose-h3:text-primary prose-a:text-primary hover:prose-a:text-primary/80"
+          className="prose prose-lg max-w-none prose-h3:text-primary prose-a:text-primary hover:prose-a:text-primary/80 prose-p:text-base prose-li:text-base"
           dangerouslySetInnerHTML={{ __html: post.content }} 
         />
       </div>
