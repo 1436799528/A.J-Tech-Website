@@ -1,3 +1,29 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    { "id": "hero", "description": "Modern architectural building with a sun flare", "imageUrl": "https://picsum.photos/seed/1/1280/720", "imageHint": "modern architecture" },
+    { "id": "whyus", "description": "Team in a meeting", "imageUrl": "https://picsum.photos/seed/99/600/450", "imageHint": "team meeting" },
+    { "id": "about-us", "description": "Modern office building", "imageUrl": "https://picsum.photos/seed/101/800/600", "imageHint": "office building" },
+    { "id": "solar1", "description": "Solar panels on a roof", "imageUrl": "https://picsum.photos/seed/2/600/400", "imageHint": "solar panels" },
+    { "id": "solar2", "description": "Close-up of a solar panel", "imageUrl": "https://picsum.photos/seed/3/600/400", "imageHint": "solar panel" },
+    { "id": "solar3", "description": "Worker installing solar panels", "imageUrl": "https://picsum.photos/seed/4/600/400", "imageHint": "solar installation" },
+    { "id": "contracting1", "description": "Construction site with crane", "imageUrl": "https://picsum.photos/seed/5/600/400", "imageHint": "construction site" },
+    { "id": "contracting2", "description": "Architects reviewing blueprints", "imageUrl": "https://picsum.photos/seed/6/600/400", "imageHint": "blueprints meeting" },
+    { "id": "contracting3", "description": "Finished modern building exterior", "imageUrl": "https://picsum.photos/seed/7/600/400", "imageHint": "modern building" },
+    { "id": "repair1", "description": "Technician repairing a circuit board", "imageUrl": "https://picsum.photos/seed/8/600/400", "imageHint": "circuit board" },
+    { "id": "repair2", "description": "Inside of a complex electronic device", "imageUrl": "https://picsum.photos/seed/9/600/400", "imageHint": "electronics inside" },
+    { "id": "repair3", "description": "Soldering a component", "imageUrl": "https://picsum.photos/seed/10/600/400", "imageHint": "soldering electronics" },
+    { "id": "construction1", "description": "Building foundation being laid", "imageUrl": "https://picsum.photos/seed/11/600/400", "imageHint": "building foundation" },
+    { "id": "construction2", "description": "Steel frame of a new building", "imageUrl": "https://picsum.photos/seed/12/600/400", "imageHint": "steel frame" },
+    { "id": "construction3", "description": "Interior finishing of a room", "imageUrl": "https://picsum.photos/seed/13/600/400", "imageHint": "room interior" },
+    { "id": "consultation1", "description": "Business meeting in an office", "imageUrl": "https://picsum.photos/seed/14/600/400", "imageHint": "business meeting" },
+    { "id": "consultation2", "description": "Person presenting on a whiteboard", "imageUrl": "https://picsum.photos/seed/15/600/400", "imageHint": "whiteboard presentation" },
+    { "id": "consultation3", "description": "Handshake over a table with documents", "imageUrl": "https://picsum.photos/seed/16/600/400", "imageHint": "business handshake" },
+    { "id": "testimonial1", "description": "Portrait of a man", "imageUrl": "https://picsum.photos/seed/17/100/100", "imageHint": "man portrait" },
+    { "id": "testimonial2", "description": "Portrait of a woman", "imageUrl": "https://picsum.photos/seed/18/100/100", "imageHint": "woman portrait" },
+    { "id": "testimonial3", "description": "Portrait of a person", "imageUrl": "https://picsum.photos/seed/19/100/100", "imageHint": "person portrait" },
+    { "id": "team1", "description": "Portrait of a professional man", "imageUrl": "https://picsum.photos/seed/20/400/400", "imageHint": "professional man" },
+    { "id": "team2", "description": "Portrait of a professional woman", "imageUrl": "https://picsum.photos/seed/21/400/400", "imageHint": "professional woman" },
+    { "id": "team3", "description": "Portrait of a professional man", "imageUrl": "https://picsum.photos/seed/22/400/400", "imageHint": "manager portrait" },
+    { "id": "team4", "description": "Portrait of a professional woman", "imageUrl": "https://picsum.photos/seed/23/400/400", "imageHint": "technician portrait" }
+  ]
 }
