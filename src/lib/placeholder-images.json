@@ -21,8 +21,8 @@
     { "id": "team2", "description": "Portrait of a female mechanical engineer", "imageUrl": "https://picsum.photos/seed/21/400/400", "imageHint": "female engineer" },
     { "id": "team3", "description": "Portrait of a chief operations engineer", "imageUrl": "https://picsum.photos/seed/22/400/400", "imageHint": "operations engineer" },
     { "id": "team4", "description": "Portrait of a female electrical engineer", "imageUrl": "https://picsum.photos/seed/23/400/400", "imageHint": "electrical engineer" },
-    { "id": "solar-roi", "description": "A rooftop with solar panels against a sunny sky.", "imageUrl": "https://picsum.photos/seed/50/800/400", "imageHint": "solar panels" },
-    { "id": "electrical-mistakes", "description": "An electrician carefully inspecting a complex wiring panel.", "imageUrl": "https://picsum.photos/seed/51/800/400", "imageHint": "electrician working" },
-    { "id": "construction-trends", "description": "A modern, futuristic building with sleek architectural lines.", "imageUrl": "https://picsum.photos/seed/52/800/400", "imageHint": "modern architecture" }
+    { "id": "solar-roi", "description": "Rooftop solar panels on a suburban home.", "imageUrl": "https://picsum.photos/seed/50/800/400", "imageHint": "rooftop solar" },
+    { "id": "electrical-mistakes", "description": "An electrician carefully inspecting a complex residential wiring panel.", "imageUrl": "https://picsum.photos/seed/51/800/400", "imageHint": "electrician working" },
+    { "id": "construction-trends", "description": "A modern building with a facade of glass and steel, showing futuristic architectural design.", "imageUrl": "https://picsum.photos/seed/52/800/400", "imageHint": "modern architecture" }
   ]
 }
