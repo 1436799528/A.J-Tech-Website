@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function PrivacyPolicyPage() {
   const [currentDate, setCurrentDate] = useState('');
@@ -67,21 +68,28 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2>5. Security of Your Information</h2>
+            <h2>5. Use of Cookies</h2>
+            <p>
+              Our website uses a limited number of cookies to enhance your user experience. A cookie is a small file placed on your device. We use a single "functional" cookie to remember your preferences, such as the state of the sidebar menu. We do not use cookies for tracking, advertising, or collecting personal data. For more detailed information, please review our <Link href="/cookie-settings">Cookie Settings</Link> page.
+            </p>
+          </section>
+
+          <section>
+            <h2>6. Security of Your Information</h2>
             <p>
               We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse.
             </p>
           </section>
 
           <section>
-            <h2>6. Changes to This Privacy Policy</h2>
+            <h2>7. Changes to This Privacy Policy</h2>
             <p>
               We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
             </p>
           </section>
 
           <section>
-            <h2>7. Contact Us</h2>
+            <h2>8. Contact Us</h2>
             <p>
               If you have questions or comments about this Privacy Policy, please contact us at <a href="mailto:a.j.engr.tech@gmail.com">a.j.engr.tech@gmail.com</a>.
             </p>

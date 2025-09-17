@@ -48,6 +48,7 @@ export function Footer() {
              <ul className="space-y-2 text-center md:text-left">
                 <li><Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary">Privacy Policy</Link></li>
                 <li><Link href="/terms-and-conditions" className="text-sm text-muted-foreground hover:text-primary">Terms & Conditions</Link></li>
+                <li><Link href="/cookie-settings" className="text-sm text-muted-foreground hover:text-primary">Cookie Settings</Link></li>
              </ul>
           </div>
 
