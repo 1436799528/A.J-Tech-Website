@@ -1,13 +1,14 @@
 'use client';
 
 import Link from 'next/link';
-import { Menu, Zap } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { navLinks } from '@/lib/data';
+import { Logo } from '../logo';
 
 export function Header() {
   const pathname = usePathname();
@@ -17,8 +18,8 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Zap className="h-6 w-6 text-primary" />
-            <span className="hidden font-bold sm:inline-block">
+            <Logo className="h-12" />
+            <span className="hidden font-bold sm:inline-block sr-only">
               AJ Tech Solutions
             </span>
           </Link>
@@ -40,8 +41,8 @@ export function Header() {
         
         <div className="flex flex-1 items-center justify-between space-x-2 md:hidden">
           <Link href="/" className="flex items-center space-x-2">
-              <Zap className="h-6 w-6 text-primary" />
-              <span className="font-bold">
+              <Logo className="h-10" />
+              <span className="font-bold sr-only">
                 AJ Tech
               </span>
           </Link>
@@ -55,8 +56,8 @@ export function Header() {
             <SheetContent side="right">
               <div className="grid gap-6 text-lg font-medium p-6">
                 <Link href="/" className="flex items-center space-x-2">
-                  <Zap className="h-6 w-6 text-primary" />
-                  <span className="font-bold">
+                  <Logo className="h-12" />
+                  <span className="font-bold sr-only">
                     AJ Tech Solutions
                   </span>
                 </Link>

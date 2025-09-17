@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import { Zap, Twitter, Linkedin, Facebook } from 'lucide-react';
+import { Twitter, Linkedin, Facebook } from 'lucide-react';
 import { navLinks, services } from '@/lib/data';
+import { Logo } from '../logo';
 
 export function Footer() {
   return (
@@ -9,8 +10,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col items-start space-y-4 col-span-1 lg:col-span-1">
             <Link href="/" className="flex items-center space-x-2">
-              <Zap className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold">AJ Tech Solutions</span>
+              <Logo className="h-12" />
+              <span className="text-xl font-bold sr-only">AJ Tech Solutions</span>
             </Link>
             <p className="text-muted-foreground text-sm">
               Comprehensive electrical solutions for residential and commercial customers.
