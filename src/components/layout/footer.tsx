@@ -6,9 +6,9 @@ import Image from 'next/image';
 export function Footer() {
   return (
     <footer className="border-t bg-secondary/50">
-      <div className="container py-12">
+      <div className="container py-12 text-center md:text-left">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="flex flex-col items-start space-y-4 col-span-1 lg:col-span-1">
+          <div className="flex flex-col items-center md:items-start space-y-4 col-span-1 lg:col-span-1">
             <Link href="/" className="flex items-center space-x-2">
                <Image 
                 src="/logo.png" 
