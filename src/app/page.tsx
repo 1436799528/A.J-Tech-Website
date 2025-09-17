@@ -55,24 +55,26 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.slice(0, 4).map((service) => (
-              <Card key={service.slug} className="flex flex-col text-center items-center transition-transform transform hover:-translate-y-2 hover:shadow-primary/20 shadow-lg bg-card">
-                <CardHeader>
-                  <div className="mx-auto bg-primary/10 p-4 rounded-full">
-                    <service.Icon className="h-10 w-10 text-primary" />
-                  </div>
-                  <CardTitle className="mt-4">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground">{service.description}</p>
-                </CardContent>
-                <div className="p-6 pt-0">
-                  <Button variant="link" asChild className="text-primary">
-                    <Link href={`/services/${service.slug}`}>Learn More &rarr;</Link>
-                  </Button>
-                </div>
-              </Card>
-            ))}
+            {services.slice(0, 4).map((service) => {
+              const serviceImage = getImage(service.gallery[0]);
+              return (
+                <Card key={service.slug} className="flex flex-col text-center items-center transition-transform transform hover:-translate-y-2 hover:shadow-primary/20 shadow-lg bg-card overflow-hidden">
+                  <Link href={`/services/${service.slug}`} className="w-full">
+                    <div className="relative aspect-video">
+                        {serviceImage && (
+                            <Image src={serviceImage.imageUrl} alt={serviceImage.description} fill className="object-cover" data-ai-hint={serviceImage.imageHint} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+                        )}
+                    </div>
+                    <CardHeader>
+                      <CardTitle>{service.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      <p className="text-muted-foreground">{service.description}</p>
+                    </CardContent>
+                  </Link>
+                </Card>
+              );
+            })}
           </div>
           <div className="text-center mt-12">
              <Button asChild size="lg">
