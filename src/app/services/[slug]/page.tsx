@@ -22,7 +22,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
   }
 
   return (
-    <div className="container py-16 md:py-24">
+    <div className="container py-16 md:py-24 px-4 md:px-6">
       <div className="max-w-4xl mx-auto">
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
           <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">

@@ -4,7 +4,7 @@ import { Mail, Phone } from 'lucide-react';
 
 export default function ContactPage() {
   return (
-    <div className="container py-16 md:py-24">
+    <div className="container py-16 md:py-24 px-4 md:px-6">
       <div className="text-center mb-12 md:mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-primary">Get In Touch</h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">

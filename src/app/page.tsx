@@ -35,7 +35,7 @@ export default function Home() {
           <p className="mt-4 max-w-3xl text-base sm:text-xl text-neutral-200">
             We provide comprehensive electrical solutions for residential and commercial customers, ensuring that your needs are met with efficiency and excellence.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0">
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <Button size="lg" asChild className="w-full sm:w-auto">
               <Link href="/contact">Contact Us</Link>
             </Button>
@@ -48,7 +48,7 @@ export default function Home() {
 
       {/* Services Section */}
       <section id="services" className="py-16 md:py-24 bg-secondary/50">
-        <div className="container">
+        <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Services</h2>
             <p className="mt-4 max-w-2xl mx-auto text-muted-foreground text-base md:text-lg">
@@ -77,7 +77,7 @@ export default function Home() {
                                 <service.Icon className="h-8 w-8 text-primary" />
                             </div>
                             <CardHeader className="p-0 mb-2">
-                            <CardTitle className="text-lg md:text-xl">{service.title}</CardTitle>
+                            <CardTitle>{service.title}</CardTitle>
                             </CardHeader>
                             <CardContent className="p-0 flex-grow">
                             <p className="text-muted-foreground text-sm">{service.description}</p>
@@ -98,7 +98,7 @@ export default function Home() {
 
       {/* Why Choose Us */}
       <section className="py-16 md:py-24">
-        <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-4 md:px-6">
             <div className="md:pr-8">
                 <h2 className="text-3xl md:text-4xl font-bold text-primary">Why Choose A.J. Tech?</h2>
                 <p className="mt-4 text-base md:text-lg text-muted-foreground">

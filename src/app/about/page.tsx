@@ -10,7 +10,7 @@ const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 export default function AboutPage() {
   const aboutImage = getImage('about-us');
   return (
-    <div className="container py-16 md:py-24">
+    <div className="container py-16 md:py-24 px-4 md:px-6">
       <div className="text-center mb-12 md:mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-primary">About A.J. Tech Solutions</h1>
         <p className="mt-4 max-w-3xl mx-auto text-base md:text-lg text-muted-foreground">

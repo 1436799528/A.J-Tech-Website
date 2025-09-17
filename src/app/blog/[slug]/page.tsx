@@ -24,7 +24,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const postImage = getImage(post.image);
 
   return (
-    <article className="container py-16 md:py-24">
+    <article className="container py-16 md:py-24 px-4 md:px-6">
       <div className="max-w-4xl mx-auto">
         <header className="mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">{post.title}</h1>
