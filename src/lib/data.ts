@@ -19,7 +19,7 @@ export const services: Service[] = [
     Icon: Building,
     description: 'Comprehensive project management for all your construction needs, ensuring quality and timely completion.',
     longDescription: 'As your general contractor, we oversee every phase of your construction project. From coordinating with architects and engineers to managing subcontractors and sourcing materials, we ensure your project is completed on time, within budget, and to the highest standards of quality and safety.',
-    gallery: ['contracting1', 'contracting2', 'contracting3'],
+    gallery: ['contracting1'],
   },
   {
     slug: 'electrical-installation-repair',
@@ -27,7 +27,7 @@ export const services: Service[] = [
     Icon: Zap,
     description: 'Expert electrical installation and repair services for residential and commercial customers.',
     longDescription: 'We provide comprehensive electrical solutions, including new installations, wiring, panel upgrades, and troubleshooting. Our certified electricians ensure your systems are safe, efficient, and up to code. From minor repairs to major installations, we handle it all with precision and care.',
-    gallery: ['repair1', 'repair2', 'repair3'],
+    gallery: ['repair1'],
   },
   {
     slug: 'solar-installation',
@@ -35,7 +35,7 @@ export const services: Service[] = [
     Icon: Sun,
     description: 'Harness the power of the sun with our expert solar panel installation services for home and business.',
     longDescription: 'Our comprehensive solar installation service takes you from initial consultation to a fully operational solar power system. We handle site assessment, system design, panel mounting, inverter setup, and grid connection. Go green, save on energy bills, and increase your property value with a reliable solar solution tailored to your needs.',
-    gallery: ['solar1', 'solar2', 'solar3', 'solar4'],
+    gallery: ['solar1', 'solar4'],
   },
   {
     slug: 'building-construction',
@@ -43,7 +43,7 @@ export const services: Service[] = [
     Icon: Building,
     description: 'From groundwork to finishing touches, we provide end-to-end solutions for new building constructions.',
     longDescription: 'We bring your architectural visions to life with our full-service building construction capabilities. Our experienced team manages everything from foundation and framing to electrical, plumbing, and interior finishing. We are committed to building durable, functional, and beautiful structures that stand the test of time.',
-    gallery: ['construction1', 'construction2', 'construction3'],
+    gallery: ['construction1'],
   },
 ];
 

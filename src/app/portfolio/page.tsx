@@ -8,6 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
 export default function PortfolioPage() {
+  const allImages = services.flatMap(service => service.gallery.map(id => getImage(id)).filter(Boolean));
   return (
     <div className="container py-16 md:py-24 px-4 md:px-6">
       <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
@@ -29,8 +30,8 @@ export default function PortfolioPage() {
 
         <TabsContent value="all">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {PlaceHolderImages.filter(img => img.id.startsWith('contracting') || img.id.startsWith('solar') || img.id.startsWith('repair') || img.id.startsWith('construction')).map((image) => (
-              <Card key={image.id} className="overflow-hidden">
+            {allImages.map((image) => (
+             image && <Card key={image.id} className="overflow-hidden">
                 <CardContent className="p-0">
                   <div className="relative h-64 w-full">
                     <Image

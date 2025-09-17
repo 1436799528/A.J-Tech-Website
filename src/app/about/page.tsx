@@ -44,16 +44,12 @@ export default function AboutPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {teamMembers.map((member) => {
-          const memberImage = getImage(member.image);
           return (
             <Card key={member.name} className="text-center border-border/60 hover:shadow-primary/20 hover:border-primary/20 transition-all duration-300">
               <CardContent className="p-6">
-                {memberImage && (
-                    <Avatar className="h-24 w-24 md:h-32 md:w-32 mx-auto mb-4">
-                        <AvatarImage src={memberImage.imageUrl} alt={member.name} data-ai-hint={memberImage.imageHint} />
-                        <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                    </Avatar>
-                )}
+                <Avatar className="h-24 w-24 md:h-32 md:w-32 mx-auto mb-4">
+                    <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                </Avatar>
                 <h3 className="text-lg md:text-xl font-semibold">{member.name}</h3>
                 <p className="text-primary text-sm">{member.role}</p>
                 <p className="text-muted-foreground mt-2 text-xs md:text-sm">{member.bio}</p>

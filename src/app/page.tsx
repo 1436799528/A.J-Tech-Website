@@ -5,7 +5,7 @@ import { services, testimonials } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { CheckCircle, Star } from 'lucide-react';
+import { CheckCircle, Star, User } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
@@ -130,8 +130,9 @@ export default function Home() {
                       <div className="p-6 pt-0">
                          <div className="flex items-center">
                             <Avatar className="h-12 w-12 mr-4">
-                                <AvatarImage src={`https://picsum.photos/seed/client${index}/100/100`} alt={testimonial.name} data-ai-hint="person portrait"/>
-                                <AvatarFallback>{testimonial.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                                <div className="flex h-full w-full items-center justify-center rounded-full bg-muted">
+                                  <User className="h-6 w-6 text-muted-foreground" />
+                                </div>
                             </Avatar>
                             <div>
                                 <p className="font-semibold text-sm">{testimonial.name}</p>

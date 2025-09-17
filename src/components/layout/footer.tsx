@@ -30,7 +30,7 @@ export function Footer() {
             </div>
           </div>
           
-          <div className="md:col-span-2 md:col-start-7 flex flex-col items-center md:items-start">
+          <div className="md:col-span-2 md:col-start-6 flex flex-col items-center md:items-start">
             <h3 className="font-semibold mb-4 text-primary">Quick Links</h3>
             <ul className="space-y-2 text-center md:text-left">
               {navLinks.map((link) => (
@@ -41,6 +41,14 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
+
+          <div className="md:col-span-2 flex flex-col items-center md:items-start">
+             <h3 className="font-semibold mb-4 text-primary">Legal</h3>
+             <ul className="space-y-2 text-center md:text-left">
+                <li><Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary">Privacy Policy</Link></li>
+                <li><Link href="/terms-and-conditions" className="text-sm text-muted-foreground hover:text-primary">Terms & Conditions</Link></li>
+             </ul>
           </div>
 
           <div className="md:col-span-3 flex flex-col items-center md:items-start">
