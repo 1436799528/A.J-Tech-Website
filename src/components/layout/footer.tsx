@@ -4,7 +4,7 @@ import { navLinks, services } from '@/lib/data';
 
 export function Footer() {
   return (
-    <footer className="border-t border-border/40 bg-card">
+    <footer className="border-t bg-secondary/50">
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col items-start space-y-4 col-span-1 lg:col-span-1">
@@ -53,7 +53,7 @@ export function Footer() {
              </address>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground">
+        <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} AJ Tech Solutions. All rights reserved.</p>
         </div>
       </div>
