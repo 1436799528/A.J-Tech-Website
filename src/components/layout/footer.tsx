@@ -47,7 +47,6 @@ export function Footer() {
           <div>
              <h3 className="font-semibold mb-4 text-primary">Contact Us</h3>
              <address className="not-italic text-sm text-muted-foreground space-y-2">
-                <p>www.electricalInstallation</p>
                 <p>Email: <a href="mailto:a.j.engr.tech@gmail.com" className="hover:text-primary">a.j.engr.tech@gmail.com</a></p>
                 <p>Phone: <a href="tel:09130134969" className="hover:text-primary">09130134969</a></p>
              </address>

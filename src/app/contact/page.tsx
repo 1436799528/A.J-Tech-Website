@@ -15,15 +15,6 @@ export default function ContactPage() {
         <div className="md:col-span-2 space-y-8">
             <div className="flex items-start gap-4">
                 <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
-                    <Globe className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                    <h3 className="text-xl font-semibold">Website</h3>
-                    <p className="text-muted-foreground">www.electricalInstallation</p>
-                </div>
-            </div>
-            <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
                     <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
