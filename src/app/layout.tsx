@@ -10,8 +10,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
 export const metadata: Metadata = {
-  title: 'AJ Tech Solutions',
-  description: 'Comprehensive electrical solutions for residential and commercial customers.',
+  title: 'AJ Tech Solutions | Electrical, Solar & Construction',
+  description: 'Your expert partner for electrical installations, solar power solutions, and general contracting. We deliver quality and innovation for residential and commercial projects.',
 };
 
 export default function RootLayout({
