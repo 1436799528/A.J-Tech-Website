@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Menu, Sun } from 'lucide-react';
+import { Menu, Zap } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 
 import { Button } from '@/components/ui/button';
@@ -17,7 +17,7 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Sun className="h-6 w-6 text-primary" />
+            <Zap className="h-6 w-6 text-primary" />
             <span className="hidden font-bold sm:inline-block">
               AJ Tech Solutions
             </span>
@@ -40,7 +40,7 @@ export function Header() {
         
         <div className="flex flex-1 items-center justify-between space-x-2 md:hidden">
           <Link href="/" className="flex items-center space-x-2">
-              <Sun className="h-6 w-6 text-primary" />
+              <Zap className="h-6 w-6 text-primary" />
               <span className="font-bold">
                 AJ Tech
               </span>
@@ -55,7 +55,7 @@ export function Header() {
             <SheetContent side="right">
               <div className="grid gap-6 text-lg font-medium p-6">
                 <Link href="/" className="flex items-center space-x-2">
-                  <Sun className="h-6 w-6 text-primary" />
+                  <Zap className="h-6 w-6 text-primary" />
                   <span className="font-bold">
                     AJ Tech Solutions
                   </span>
@@ -79,7 +79,7 @@ export function Header() {
         
         <div className="hidden flex-1 items-center justify-end space-x-4 md:flex">
           <Button asChild>
-            <Link href="/contact">Request Consultation</Link>
+            <Link href="/contact">Contact Us</Link>
           </Button>
         </div>
       </div>

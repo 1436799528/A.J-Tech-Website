@@ -1,5 +1,5 @@
 import { ContactForm } from '@/components/contact-form';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, Globe } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -15,11 +15,11 @@ export default function ContactPage() {
         <div className="md:col-span-2 space-y-8">
             <div className="flex items-start gap-4">
                 <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-primary" />
+                    <Globe className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                    <h3 className="text-xl font-semibold">Our Office</h3>
-                    <p className="text-muted-foreground">123 Tech Street, Innovation City, 12345</p>
+                    <h3 className="text-xl font-semibold">Website</h3>
+                    <p className="text-muted-foreground">www.electricalInstallation</p>
                 </div>
             </div>
             <div className="flex items-start gap-4">
@@ -28,7 +28,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                     <h3 className="text-xl font-semibold">Email Us</h3>
-                    <a href="mailto:contact@ajtech.com" className="text-muted-foreground hover:text-primary transition-colors">contact@ajtech.com</a>
+                    <a href="mailto:a.j.engr.tech@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">a.j.engr.tech@gmail.com</a>
                 </div>
             </div>
             <div className="flex items-start gap-4">
@@ -37,7 +37,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                     <h3 className="text-xl font-semibold">Call Us</h3>
-                    <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">(123) 456-7890</a>
+                    <a href="tel:09130134969" className="text-muted-foreground hover:text-primary transition-colors">09130134969</a>
                 </div>
             </div>
         </div>

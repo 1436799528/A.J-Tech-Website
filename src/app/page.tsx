@@ -28,17 +28,17 @@ export default function Home() {
             data-ai-hint={heroImage.imageHint}
           />
         )}
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/60" />
         <div className="relative container h-full flex flex-col items-center justify-center text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            Building Tomorrow's Solutions, Today.
+            A.J TECH SOLUTIONS
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl text-neutral-200">
-            A.J. Tech Solutions offers expert services in solar energy, construction, and technology to power your progress.
+            We provide comprehensive electrical solutions for residential and commercial customers, ensuring that your needs are met with efficiency and excellence.
           </p>
           <div className="mt-8 flex gap-4">
             <Button size="lg" asChild>
-              <Link href="/contact">Request a Consultation</Link>
+              <Link href="/contact">Contact Us</Link>
             </Button>
             <Button size="lg" variant="secondary" asChild>
               <Link href="/services">Our Services</Link>
@@ -51,13 +51,13 @@ export default function Home() {
       <section id="services" className="py-16 md:py-24 bg-card">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Core Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Services</h2>
             <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
-              We provide a wide range of professional services to meet your needs.
+              We provide a wide range of professional electrical and construction services.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.slice(0, 3).map((service) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.slice(0, 4).map((service) => (
               <Card key={service.slug} className="flex flex-col text-center items-center transition-transform transform hover:-translate-y-2 hover:shadow-primary/20 shadow-lg">
                 <CardHeader>
                   <div className="mx-auto bg-primary/10 p-4 rounded-full">

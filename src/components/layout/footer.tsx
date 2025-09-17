@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Sun, Twitter, Linkedin, Facebook } from 'lucide-react';
+import { Zap, Twitter, Linkedin, Facebook } from 'lucide-react';
 import { navLinks, services } from '@/lib/data';
 
 export function Footer() {
@@ -9,11 +9,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col items-start space-y-4 col-span-1 lg:col-span-1">
             <Link href="/" className="flex items-center space-x-2">
-              <Sun className="h-8 w-8 text-primary" />
+              <Zap className="h-8 w-8 text-primary" />
               <span className="text-xl font-bold">AJ Tech Solutions</span>
             </Link>
             <p className="text-muted-foreground text-sm">
-              Your partner in building a sustainable and efficient future.
+              Comprehensive electrical solutions for residential and commercial customers.
             </p>
             <div className="flex space-x-4">
               <Link href="#" aria-label="Twitter" className="text-muted-foreground hover:text-primary"><Twitter className="h-5 w-5" /></Link>
@@ -47,9 +47,9 @@ export function Footer() {
           <div>
              <h3 className="font-semibold mb-4 text-primary">Contact Us</h3>
              <address className="not-italic text-sm text-muted-foreground space-y-2">
-                <p>123 Tech Street, Innovation City, 12345</p>
-                <p>Email: <a href="mailto:contact@ajtech.com" className="hover:text-primary">contact@ajtech.com</a></p>
-                <p>Phone: <a href="tel:+1234567890" className="hover:text-primary">(123) 456-7890</a></p>
+                <p>www.electricalInstallation</p>
+                <p>Email: <a href="mailto:a.j.engr.tech@gmail.com" className="hover:text-primary">a.j.engr.tech@gmail.com</a></p>
+                <p>Phone: <a href="tel:09130134969" className="hover:text-primary">09130134969</a></p>
              </address>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import type { NavLink, Service, Testimonial, TeamMember, FaqItem } from './types';
-import { Sun, HardHat, Wrench, Building, MessageSquare } from 'lucide-react';
+import { Sun, HardHat, Wrench, Building, Zap } from 'lucide-react';
 
 export const navLinks: NavLink[] = [
   { href: '/', label: 'Home' },
@@ -11,14 +11,6 @@ export const navLinks: NavLink[] = [
 
 export const services: Service[] = [
   {
-    slug: 'solar-installation',
-    title: 'Solar Installation',
-    Icon: Sun,
-    description: 'Harness the power of the sun with our expert solar panel installation services for residential and commercial properties.',
-    longDescription: 'Our comprehensive solar installation service takes you from initial consultation to a fully operational solar power system. We handle site assessment, system design, panel mounting, inverter setup, and grid connection. Go green, save on energy bills, and increase your property value with a reliable solar solution tailored to your needs.',
-    gallery: ['solar1', 'solar2', 'solar3'],
-  },
-  {
     slug: 'general-contracting',
     title: 'General Contracting',
     Icon: HardHat,
@@ -27,12 +19,20 @@ export const services: Service[] = [
     gallery: ['contracting1', 'contracting2', 'contracting3'],
   },
   {
-    slug: 'electronics-repairs',
-    title: 'Electronics Repairs',
-    Icon: Wrench,
-    description: 'Expert diagnosis and repair for a wide range of electronic devices, from consumer gadgets to industrial equipment.',
-    longDescription: 'Don\'t replace, repair! Our skilled technicians can diagnose and fix a wide variety of electronic devices. We specialize in component-level repairs for circuit boards, power supplies, and control systems, saving you the cost of expensive replacements and reducing electronic waste.',
+    slug: 'electrical-installation-repair',
+    title: 'Electrical Installation & Repair',
+    Icon: Zap,
+    description: 'Expert electrical installation and repair services for residential and commercial customers.',
+    longDescription: 'We provide comprehensive electrical solutions, including new installations, wiring, panel upgrades, and troubleshooting. Our certified electricians ensure your systems are safe, efficient, and up to code. From minor repairs to major installations, we handle it all with precision and care.',
     gallery: ['repair1', 'repair2', 'repair3'],
+  },
+  {
+    slug: 'solar-installation',
+    title: 'Solar Panel Installation',
+    Icon: Sun,
+    description: 'Harness the power of the sun with our expert solar panel installation services for home and business.',
+    longDescription: 'Our comprehensive solar installation service takes you from initial consultation to a fully operational solar power system. We handle site assessment, system design, panel mounting, inverter setup, and grid connection. Go green, save on energy bills, and increase your property value with a reliable solar solution tailored to your needs.',
+    gallery: ['solar1', 'solar2', 'solar3'],
   },
   {
     slug: 'building-construction',
@@ -41,14 +41,6 @@ export const services: Service[] = [
     description: 'From groundwork to finishing touches, we provide end-to-end solutions for new building constructions.',
     longDescription: 'We bring your architectural visions to life with our full-service building construction capabilities. Our experienced team manages everything from foundation and framing to electrical, plumbing, and interior finishing. We are committed to building durable, functional, and beautiful structures that stand the test of time.',
     gallery: ['construction1', 'construction2', 'construction3'],
-  },
-  {
-    slug: 'consultation',
-    title: 'Consultation',
-    Icon: MessageSquare,
-    description: 'Professional advice and strategic planning for your technical and construction projects.',
-    longDescription: 'Leverage our industry expertise to ensure your project\'s success. Our consultation services cover feasibility studies, project planning, technology assessment, and regulatory compliance. We provide the strategic insights you need to make informed decisions, mitigate risks, and achieve your project goals efficiently.',
-    gallery: ['consultation1', 'consultation2', 'consultation3'],
   },
 ];
 
@@ -68,7 +60,7 @@ export const testimonials: Testimonial[] = [
     {
         name: 'Samuel Lee',
         company: 'Homeowner',
-        comment: 'I thought my high-end audio system was a goner. The technicians at AJ Tech diagnosed the problem quickly and had it working like new in no time. Incredible service!',
+        comment: 'I had a complex electrical issue that other companies couldn\'t solve. The technicians at AJ Tech diagnosed and fixed it in one visit. Incredible service!',
         image: 'testimonial3',
     },
 ];
@@ -94,8 +86,8 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: 'Diana Green',
-        role: 'Lead Technician',
-        bio: 'Diana heads our electronics repair division, with an uncanny ability to diagnose and fix complex technical issues.',
+        role: 'Lead Electrician',
+        bio: 'Diana heads our electrical services division, with an uncanny ability to diagnose and fix complex electrical systems.',
         image: 'team4',
     },
 ];
@@ -110,11 +102,11 @@ export const faqItems: FaqItem[] = [
         answer: 'The best way to get a quote is to fill out our contact form with as much detail as possible. We will review your request and get back to you within 24-48 hours to schedule a consultation.',
     },
     {
-        question: 'What is the typical timeline for a solar installation?',
-        answer: 'A standard residential solar installation typically takes 1-3 days on-site. The entire process, from consultation to system activation, can take a few weeks, depending on local permits and utility company approvals.',
+        question: 'What is the typical timeline for an electrical installation?',
+        answer: 'The timeline varies greatly depending on the scope of the project. A simple repair may take a few hours, while a full rewiring of a house could take several days. We provide a detailed timeline after the initial consultation.',
     },
     {
         question: 'Are you licensed and insured?',
-        answer: 'Yes, AJ Tech Solutions is fully licensed, bonded, and insured for all services we provide. We prioritize safety and compliance in all our projects.',
+        answer: 'Yes, AJ Tech Solutions is fully licensed, bonded, and insured for all services we provide. All our electricians are certified professionals. We prioritize safety and compliance in all our projects.',
     },
 ];

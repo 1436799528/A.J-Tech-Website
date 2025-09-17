@@ -5,8 +5,8 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'AJ Tech Solutions Hub',
-  description: 'Professional services for solar, contracting, repairs, and construction.',
+  title: 'AJ Tech Solutions',
+  description: 'Comprehensive electrical solutions for residential and commercial customers.',
 };
 
 export default function RootLayout({

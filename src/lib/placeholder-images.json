@@ -1,6 +1,6 @@
 {
   "placeholderImages": [
-    { "id": "hero", "description": "Modern architectural building with a sun flare", "imageUrl": "https://picsum.photos/seed/1/1280/720", "imageHint": "modern architecture" },
+    { "id": "hero", "description": "Electrician working on a circuit breaker", "imageUrl": "https://picsum.photos/seed/1/1280/720", "imageHint": "electrician working" },
     { "id": "whyus", "description": "Team in a meeting", "imageUrl": "https://picsum.photos/seed/99/600/450", "imageHint": "team meeting" },
     { "id": "about-us", "description": "Modern office building", "imageUrl": "https://picsum.photos/seed/101/800/600", "imageHint": "office building" },
     { "id": "solar1", "description": "Solar panels on a roof", "imageUrl": "https://picsum.photos/seed/2/600/400", "imageHint": "solar panels" },

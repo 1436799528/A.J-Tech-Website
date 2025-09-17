@@ -9,7 +9,7 @@ export default function ServicesPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-primary">Our Services</h1>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-          We offer a comprehensive suite of services to bring your vision to life, from sustainable energy solutions to large-scale construction and precision repairs.
+          We offer a comprehensive suite of services to bring your vision to life, from sustainable energy solutions to large-scale construction and precision electrical work.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
