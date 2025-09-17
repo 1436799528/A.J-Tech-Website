@@ -6,6 +6,7 @@
     { "id": "solar1", "description": "Commercial solar panel installation", "imageUrl": "https://goodwill-electrical.co.uk/wp-content/uploads/2025/04/commercial-solar-panel-installation-4.webp", "imageHint": "commercial solar" },
     { "id": "solar2", "description": "Engineer inspecting a solar farm", "imageUrl": "https://picsum.photos/seed/3/600/400", "imageHint": "solar engineer" },
     { "id": "solar3", "description": "Close-up of a solar panel with sun glare", "imageUrl": "https://picsum.photos/seed/4/600/400", "imageHint": "solar panel" },
+    { "id": "solar4", "description": "Solar panel installation on a roof", "imageUrl": "https://passionelectric.com/wp-content/uploads/Solar-Panel-Installation-1024x576.jpg", "imageHint": "rooftop solar" },
     { "id": "contracting1", "description": "High voltage industrial electrical project", "imageUrl": "https://tristateec.com/wp-content/uploads/2021/04/2021-03-working-on-high-voltage-industrial-electrical-project-chattnooga.jpg", "imageHint": "industrial electrical" },
     { "id": "contracting2", "description": "Architect and engineer discussing blueprints on a tablet", "imageUrl": "https://picsum.photos/seed/6/600/400", "imageHint": "digital blueprints" },
     { "id": "contracting3", "description": "A complex construction project with cranes", "imageUrl": "https://picsum.photos/seed/7/600/400", "imageHint": "complex construction" },

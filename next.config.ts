@@ -53,7 +53,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'httpshttps',
         hostname: 'resource-erectors.com',
         port: '',
         pathname: '/**',
@@ -61,6 +61,12 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'magnifyelectric.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'passionelectric.com',
         port: '',
         pathname: '/**',
       }

@@ -31,7 +31,7 @@ export const services: Service[] = [
     Icon: Sun,
     description: 'Harness the power of the sun with our expert solar panel installation services for home and business.',
     longDescription: 'Our comprehensive solar installation service takes you from initial consultation to a fully operational solar power system. We handle site assessment, system design, panel mounting, inverter setup, and grid connection. Go green, save on energy bills, and increase your property value with a reliable solar solution tailored to your needs.',
-    gallery: ['solar1', 'solar2', 'solar3'],
+    gallery: ['solar1', 'solar2', 'solar3', 'solar4'],
   },
   {
     slug: 'building-construction',
