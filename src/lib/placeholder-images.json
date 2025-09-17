@@ -1,3 +1,4 @@
+
 {
   "placeholderImages": [
     { "id": "hero", "description": "Engineer reviewing blueprints on a construction site", "imageUrl": "https://picsum.photos/seed/1/1280/720", "imageHint": "engineer blueprints" },
@@ -21,6 +22,7 @@
     { "id": "team3", "description": "Portrait of a chief operations engineer", "imageUrl": "https://picsum.photos/seed/22/400/400", "imageHint": "operations engineer" },
     { "id": "team4", "description": "Portrait of a female electrical engineer", "imageUrl": "https://picsum.photos/seed/23/400/400", "imageHint": "electrical engineer" },
     { "id": "solar-roi", "description": "Hand holding a lightbulb with a plant inside, solar panels in background", "imageUrl": "https://picsum.photos/seed/50/800/400", "imageHint": "solar investment" },
-    { "id": "electrical-mistakes", "description": "Tangled mess of electrical wires", "imageUrl": "https://picsum.photos/seed/51/800/400", "imageHint": "messy wires" }
+    { "id": "electrical-mistakes", "description": "Tangled mess of electrical wires", "imageUrl": "https://picsum.photos/seed/51/800/400", "imageHint": "messy wires" },
+    { "id": "construction-trends", "description": "Digital rendering of a modern building with data overlays", "imageUrl": "https://picsum.photos/seed/52/800/400", "imageHint": "digital construction" }
   ]
 }
