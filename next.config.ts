@@ -57,6 +57,12 @@ const nextConfig: NextConfig = {
         hostname: 'resource-erectors.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'magnifyelectric.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

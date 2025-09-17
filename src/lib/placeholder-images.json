@@ -1,7 +1,7 @@
 {
   "placeholderImages": [
     { "id": "hero", "description": "Engineer reviewing blueprints on a construction site", "imageUrl": "https://picsum.photos/seed/1/1280/720", "imageHint": "engineer blueprints" },
-    { "id": "whyus", "description": "Team of engineers collaborating on a project", "imageUrl": "https://picsum.photos/seed/99/600/450", "imageHint": "engineering team" },
+    { "id": "whyus", "description": "Team of engineers collaborating on a project", "imageUrl": "https://magnifyelectric.com/wp-content/uploads/2025/03/image-1024x701.jpeg", "imageHint": "engineering team" },
     { "id": "about-us", "description": "Modern engineering facility exterior", "imageUrl": "https://picsum.photos/seed/101/800/600", "imageHint": "engineering facility" },
     { "id": "solar1", "description": "Commercial solar panel installation", "imageUrl": "https://goodwill-electrical.co.uk/wp-content/uploads/2025/04/commercial-solar-panel-installation-4.webp", "imageHint": "commercial solar" },
     { "id": "solar2", "description": "Engineer inspecting a solar farm", "imageUrl": "https://picsum.photos/seed/3/600/400", "imageHint": "solar engineer" },
