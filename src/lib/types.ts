@@ -1,3 +1,4 @@
+
 import type { LucideIcon } from 'lucide-react';
 
 export type NavLink = {
@@ -29,4 +30,15 @@ export type BlogPost = {
   summary: string;
   content: string;
   image: string;
+};
+
+export type Testimonial = {
+  name: string;
+  company: string;
+  quote: string;
+};
+
+export type FAQ = {
+  question: string;
+  answer: string;
 };

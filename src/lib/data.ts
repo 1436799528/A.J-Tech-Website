@@ -1,12 +1,14 @@
 
-import type { NavLink, Service, TeamMember } from './types';
+import type { NavLink, Service, TeamMember, Testimonial, FAQ } from './types';
 import { Sun, Building, Zap } from 'lucide-react';
 
 export const navLinks: NavLink[] = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
+  { href: '/portfolio', label: 'Portfolio' },
   { href: '/about', label: 'About Us' },
   { href: '/blog', label: 'Blog' },
+  { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -70,4 +72,59 @@ export const teamMembers: TeamMember[] = [
         bio: 'Diana heads our electrical services division, with an uncanny ability to diagnose and fix complex electrical systems.',
         image: 'team4',
     },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    name: 'Sarah L.',
+    company: 'Homeowner, Springfield',
+    quote: 'The team at A.J. Tech was professional, efficient, and incredibly knowledgeable. They upgraded our entire electrical panel and we couldn\'t be happier with the results. Highly recommend!',
+  },
+  {
+    name: 'Tom P.',
+    company: 'Business Owner, Metro City',
+    quote: 'Our new solar installation has already cut our energy bills by 60%. The process was seamless from start to finish. A.J. Tech delivered on every promise.',
+  },
+  {
+    name: 'David R.',
+    company: 'General Contractor',
+    quote: 'As a contractor, I rely on dependable partners. A.J. Tech is my go-to for all electrical work. They are reliable, safe, and their quality of work is second to none.',
+  },
+   {
+    name: 'Emily C.',
+    company: 'Real Estate Developer',
+    quote: 'We partnered with A.J. Tech on a new housing development. Their general contracting and construction team was phenomenal, keeping the project on schedule and on budget.',
+  },
+  {
+    name: 'Michael B.',
+    company: 'Homeowner, Oakwood',
+    quote: 'I had an emergency electrical issue and A.J. Tech responded immediately. They fixed the problem quickly and at a fair price. True professionals.',
+  },
+];
+
+export const faqData: FAQ[] = [
+  {
+    question: "What kind of electrical services do you offer?",
+    answer: "We offer a comprehensive range of electrical services, including new installations, repairs, panel upgrades, wiring for new construction and renovations, lighting installation, and emergency electrical services for both residential and commercial clients."
+  },
+  {
+    question: "How long does a typical solar panel installation take?",
+    answer: "A standard residential solar panel installation typically takes 1-3 days to complete the physical installation. The entire process, from initial consultation, and design, to permitting and final activation, can take a few weeks. We handle all the details to make it as smooth as possible for you."
+  },
+  {
+    question: "Are you licensed and insured?",
+    answer: "Yes, A.J. Tech Solutions is a fully licensed, bonded, and insured company. All of our electricians and technicians are certified professionals who adhere to the highest safety and quality standards."
+  },
+  {
+    question: "Do you offer free estimates?",
+    answer: "Absolutely. We provide free, no-obligation quotes for all our services. Contact us to schedule a consultation, and we will assess your needs and provide a detailed estimate for your project."
+  },
+  {
+    question: "What is the warranty on your work?",
+    answer: "We stand by the quality of our work. We offer a comprehensive warranty on all our labor and installations. Specific warranty details vary by service and materials used, and we will provide all warranty information upfront with your project proposal."
+  },
+  {
+    question: "Can you handle large-scale construction projects?",
+    answer: "Yes, our general contracting and building construction divisions are equipped to handle projects of all sizes, from residential homes to commercial buildings. We have the experience and resources to manage your project from concept to completion."
+  }
 ];

@@ -1,11 +1,13 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { services } from '@/lib/data';
+import { services, testimonials } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CheckCircle } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { CheckCircle, Star } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
@@ -16,7 +18,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center py-20">
+      <section className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center text-center py-20 px-4">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
@@ -28,7 +30,7 @@ export default function Home() {
           />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/50 to-transparent" />
-        <div className="relative container text-center text-white px-4">
+        <div className="relative container text-white max-w-4xl">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground">
             Powering Innovation with <span className="text-primary">A.J. Tech</span>
           </h1>
@@ -49,9 +51,9 @@ export default function Home() {
       {/* Services Section */}
       <section id="services" className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Core Services</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-muted-foreground text-base md:text-lg">
+            <p className="mt-4 text-muted-foreground text-base md:text-lg">
               A commitment to quality, safety, and innovation across every project.
             </p>
           </div>
@@ -77,7 +79,7 @@ export default function Home() {
                                 <service.Icon className="h-8 w-8 text-primary" />
                             </div>
                             <CardHeader className="p-0 mb-2">
-                            <CardTitle>{service.title}</CardTitle>
+                            <CardTitle className="text-xl">{service.title}</CardTitle>
                             </CardHeader>
                             <CardContent className="p-0 flex-grow">
                             <p className="text-muted-foreground text-sm">{service.description}</p>
@@ -95,10 +97,62 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* Testimonials Section */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container px-4 md:px-6">
+          <div className="text-center mb-12 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">What Our Clients Say</h2>
+            <p className="mt-4 text-muted-foreground text-base md:text-lg">
+              Building trust through exceptional service and proven results.
+            </p>
+          </div>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-5xl mx-auto"
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1 h-full">
+                    <Card className="flex flex-col h-full justify-between">
+                      <CardContent className="p-6">
+                        <div className="flex items-center mb-4">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} className="h-5 w-5 text-primary fill-primary" />
+                          ))}
+                        </div>
+                        <p className="text-muted-foreground text-sm italic">"{testimonial.quote}"</p>
+                      </CardContent>
+                      <div className="p-6 pt-0">
+                         <div className="flex items-center">
+                            <Avatar className="h-12 w-12 mr-4">
+                                <AvatarImage src={`https://picsum.photos/seed/client${index}/100/100`} alt={testimonial.name} data-ai-hint="person portrait"/>
+                                <AvatarFallback>{testimonial.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                            </Avatar>
+                            <div>
+                                <p className="font-semibold text-sm">{testimonial.name}</p>
+                                <p className="text-muted-foreground text-xs">{testimonial.company}</p>
+                            </div>
+                        </div>
+                      </div>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden sm:flex" />
+            <CarouselNext className="hidden sm:flex" />
+          </Carousel>
+        </div>
+      </section>
 
       {/* Why Choose Us */}
       <section className="py-16 md:py-24 bg-card">
-        <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-4 md:px-6">
+        <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-4 md:px-6 max-w-6xl mx-auto">
             <div className="md:pr-8">
                 <h2 className="text-3xl md:text-4xl font-bold text-primary">Why Choose A.J. Tech?</h2>
                 <p className="mt-4 text-base md:text-lg text-muted-foreground">
