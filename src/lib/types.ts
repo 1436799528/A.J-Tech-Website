@@ -14,21 +14,9 @@ export type Service = {
   gallery: string[];
 };
 
-export type Testimonial = {
-  name: string;
-  company: string;
-  comment: string;
-  image: string;
-};
-
 export type TeamMember = {
   name:string;
   role: string;
   bio: string;
   image: string;
-};
-
-export type FaqItem = {
-  question: string;
-  answer: string;
 };

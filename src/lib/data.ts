@@ -1,11 +1,10 @@
-import type { NavLink, Service, Testimonial, TeamMember, FaqItem } from './types';
-import { Sun, HardHat, Wrench, Building, Zap } from 'lucide-react';
+import type { NavLink, Service, TeamMember } from './types';
+import { Sun, HardHat, Building, Zap } from 'lucide-react';
 
 export const navLinks: NavLink[] = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
   { href: '/about', label: 'About Us' },
-  { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -44,27 +43,6 @@ export const services: Service[] = [
   },
 ];
 
-export const testimonials: Testimonial[] = [
-    {
-        name: 'John Doe',
-        company: 'Innovate Corp',
-        comment: 'AJ Tech Solutions delivered our new office building ahead of schedule and under budget. Their professionalism and attention to detail were outstanding. Highly recommended!',
-        image: 'testimonial1',
-    },
-    {
-        name: 'Jane Smith',
-        company: 'Green Energy Inc.',
-        comment: 'The solar installation process was seamless. The team was knowledgeable, efficient, and friendly. Our energy bills have dropped significantly!',
-        image: 'testimonial2',
-    },
-    {
-        name: 'Samuel Lee',
-        company: 'Homeowner',
-        comment: 'I had a complex electrical issue that other companies couldn\'t solve. The technicians at AJ Tech diagnosed and fixed it in one visit. Incredible service!',
-        image: 'testimonial3',
-    },
-];
-
 export const teamMembers: TeamMember[] = [
     {
         name: 'Alex Johnson',
@@ -89,24 +67,5 @@ export const teamMembers: TeamMember[] = [
         role: 'Lead Electrician',
         bio: 'Diana heads our electrical services division, with an uncanny ability to diagnose and fix complex electrical systems.',
         image: 'team4',
-    },
-];
-
-export const faqItems: FaqItem[] = [
-    {
-        question: 'What areas do you serve?',
-        answer: 'We primarily serve the greater metropolitan area but are available for large-scale projects nationwide. Please contact us to discuss your project specifics.',
-    },
-    {
-        question: 'How do I get a quote for a project?',
-        answer: 'The best way to get a quote is to fill out our contact form with as much detail as possible. We will review your request and get back to you within 24-48 hours to schedule a consultation.',
-    },
-    {
-        question: 'What is the typical timeline for an electrical installation?',
-        answer: 'The timeline varies greatly depending on the scope of the project. A simple repair may take a few hours, while a full rewiring of a house could take several days. We provide a detailed timeline after the initial consultation.',
-    },
-    {
-        question: 'Are you licensed and insured?',
-        answer: 'Yes, AJ Tech Solutions is fully licensed, bonded, and insured for all services we provide. All our electricians are certified professionals. We prioritize safety and compliance in all our projects.',
     },
 ];
