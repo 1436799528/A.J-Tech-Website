@@ -2,14 +2,6 @@
 import type { NavLink, Service, TeamMember } from './types';
 import { Sun, Building, Zap } from 'lucide-react';
 
-const SolarPanelIcon = (props: any) => (
-  <img src="https://cdn.vectorstock.com/i/1000v/39/34/electrical-service-and-installation-logo-icon-vector-32913934.jpg" alt="Solar Panel Icon" {...props} />
-);
-
-const BuildingConstructionIcon = (props: any) => (
-    <img src="https://uxwing.com/wp-content/themes/uxwing/download/business-professional-services/services-electrician-icon.svg" alt="Building permit icon" {...props} />
-);
-
 export const navLinks: NavLink[] = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
@@ -37,7 +29,7 @@ export const services: Service[] = [
   {
     slug: 'solar-installation',
     title: 'Solar Panel Installation',
-    Icon: SolarPanelIcon,
+    Icon: Sun,
     description: 'Harness the power of the sun with our expert solar panel installation services for home and business.',
     longDescription: 'Our comprehensive solar installation service takes you from initial consultation to a fully operational solar power system. We handle site assessment, system design, panel mounting, inverter setup, and grid connection. Go green, save on energy bills, and increase your property value with a reliable solar solution tailored to your needs.',
     gallery: ['solar1', 'solar2', 'solar3', 'solar4'],
@@ -45,7 +37,7 @@ export const services: Service[] = [
   {
     slug: 'building-construction',
     title: 'Building Construction',
-    Icon: BuildingConstructionIcon,
+    Icon: Building,
     description: 'From groundwork to finishing touches, we provide end-to-end solutions for new building constructions.',
     longDescription: 'We bring your architectural visions to life with our full-service building construction capabilities. Our experienced team manages everything from foundation and framing to electrical, plumbing, and interior finishing. We are committed to building durable, functional, and beautiful structures that stand the test of time.',
     gallery: ['construction1', 'construction2', 'construction3'],
