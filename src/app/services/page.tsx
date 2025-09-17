@@ -1,8 +1,12 @@
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { services } from '@/lib/data';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+
+const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
 export default function ServicesPage() {
   return (
@@ -14,24 +18,39 @@ export default function ServicesPage() {
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map((service) => (
-            <Card key={service.slug} className="flex flex-col text-center items-center transition-transform transform hover:-translate-y-2 hover:shadow-primary/20 shadow-lg bg-card overflow-hidden">
-                <Link href={`/services/${service.slug}`} className="w-full flex flex-col h-full p-6 items-center">
-                    <CardHeader className="p-0 mb-4">
-                        <div className="mx-auto bg-primary/10 p-4 rounded-full">
-                            <service.Icon className="h-8 w-8 text-primary" />
+        {services.map((service) => {
+            const serviceImage = getImage(service.gallery[0]);
+            return (
+            <Card key={service.slug} className="flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-primary/20 shadow-lg bg-card overflow-hidden">
+                <Link href={`/services/${service.slug}`} className="w-full flex flex-col h-full">
+                    {serviceImage && (
+                        <div className="relative h-56 w-full">
+                            <Image
+                            src={serviceImage.imageUrl}
+                            alt={service.title}
+                            fill
+                            className="object-cover"
+                            data-ai-hint={serviceImage.imageHint}
+                            />
                         </div>
-                        <CardTitle className="mt-4">{service.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent className="p-0 flex-grow">
-                        <p className="text-muted-foreground">{service.description}</p>
-                    </CardContent>
-                    <div className="mt-auto pt-6">
+                    )}
+                    <div className="p-6 flex flex-col items-center text-center flex-grow">
+                        <CardHeader className="p-0 mb-4">
+                            <div className="mx-auto bg-primary/10 p-4 rounded-full">
+                                <service.Icon className="h-8 w-8 text-primary" />
+                            </div>
+                            <CardTitle className="mt-4 text-xl">{service.title}</CardTitle>
+                        </CardHeader>
+                        <CardContent className="p-0 flex-grow">
+                            <p className="text-muted-foreground text-sm">{service.description}</p>
+                        </CardContent>
+                    </div>
+                    <div className="mt-auto p-6 pt-0">
                         <Button variant="outline">View Details</Button>
                     </div>
                 </Link>
             </Card>
-           )
+           )}
         )}
       </div>
     </div>

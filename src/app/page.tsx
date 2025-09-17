@@ -32,7 +32,7 @@ export default function Home() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
             A.J TECH SOLUTIONS
           </h1>
-          <p className="mt-4 max-w-3xl text-base sm:text-lg md:text-xl text-neutral-200">
+          <p className="mt-4 max-w-3xl text-lg sm:text-xl text-neutral-200">
             We provide comprehensive electrical solutions for residential and commercial customers, ensuring that your needs are met with efficiency and excellence.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0">
@@ -56,21 +56,37 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.slice(0, 4).map((service) => (
-                <Card key={service.slug} className="flex flex-col text-center items-center transition-transform transform hover:-translate-y-2 hover:shadow-primary/20 shadow-lg bg-card overflow-hidden">
-                  <Link href={`/services/${service.slug}`} className="w-full p-6 flex flex-col items-center h-full">
-                    <div className="bg-primary/10 p-3 rounded-full mb-4">
-                        <service.Icon className="h-8 w-8 text-primary" />
-                    </div>
-                    <CardHeader className="p-0 mb-2">
-                      <CardTitle>{service.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent className="p-0 flex-grow">
-                      <p className="text-muted-foreground">{service.description}</p>
-                    </CardContent>
-                  </Link>
-                </Card>
-              ))}
+            {services.slice(0, 4).map((service) => {
+                const serviceImage = getImage(service.gallery[0]);
+                return (
+                    <Card key={service.slug} className="flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-primary/20 shadow-lg bg-card overflow-hidden">
+                    <Link href={`/services/${service.slug}`} className="w-full flex flex-col h-full">
+                        {serviceImage && (
+                            <div className="relative h-48 w-full">
+                                <Image
+                                src={serviceImage.imageUrl}
+                                alt={service.title}
+                                fill
+                                className="object-cover"
+                                data-ai-hint={serviceImage.imageHint}
+                                />
+                            </div>
+                        )}
+                        <div className="p-6 flex flex-col items-center text-center flex-grow">
+                            <div className="bg-primary/10 p-3 rounded-full mb-4">
+                                <service.Icon className="h-8 w-8 text-primary" />
+                            </div>
+                            <CardHeader className="p-0 mb-2">
+                            <CardTitle className="text-xl">{service.title}</CardTitle>
+                            </CardHeader>
+                            <CardContent className="p-0 flex-grow">
+                            <p className="text-muted-foreground text-sm">{service.description}</p>
+                            </CardContent>
+                        </div>
+                    </Link>
+                    </Card>
+                )
+            })}
           </div>
           <div className="text-center mt-12">
              <Button asChild size="lg">
