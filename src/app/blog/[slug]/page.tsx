@@ -1,3 +1,4 @@
+
 import { blogPosts } from '@/lib/blog-data';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -40,7 +41,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         </header>
 
         {postImage && (
-          <div className="relative h-64 md:h-96 rounded-lg overflow-hidden shadow-xl mb-12">
+          <div className="relative h-64 md:h-96 rounded-lg overflow-hidden shadow-xl mb-12 w-full">
             <Image
               src={postImage.imageUrl}
               alt={post.title}

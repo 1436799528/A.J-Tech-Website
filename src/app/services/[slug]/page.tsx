@@ -42,7 +42,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
                 const image = getImage(imageId);
                 if (!image) return null;
                 return (
-                  <div key={image.id} className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                  <div key={image.id} className="relative h-64 rounded-lg overflow-hidden shadow-lg w-full">
                     <Image
                       src={image.imageUrl}
                       alt={image.description}

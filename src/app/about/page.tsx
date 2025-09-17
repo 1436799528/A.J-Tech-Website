@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { teamMembers } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -19,7 +20,7 @@ export default function AboutPage() {
 
       <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
         {aboutImage && (
-          <div className="relative h-96 rounded-lg overflow-hidden shadow-xl aspect-video md:aspect-auto">
+          <div className="relative h-96 rounded-lg overflow-hidden shadow-xl w-full aspect-video md:aspect-auto">
               <Image src={aboutImage.imageUrl} alt={aboutImage.description} fill className="object-cover" data-ai-hint={aboutImage.imageHint}/>
           </div>
         )}

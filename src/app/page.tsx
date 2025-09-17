@@ -129,7 +129,7 @@ export default function Home() {
                 </ul>
             </div>
             {whyUsImage && (
-              <div className="relative h-80 rounded-lg overflow-hidden shadow-xl aspect-video md:aspect-auto">
+              <div className="relative h-80 rounded-lg overflow-hidden shadow-xl w-full aspect-video md:aspect-auto">
                   <Image src={whyUsImage.imageUrl} alt={whyUsImage.description} fill className="object-cover" data-ai-hint={whyUsImage.imageHint} />
               </div>
             )}
