@@ -32,7 +32,7 @@ export default function Home() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
             A.J TECH SOLUTIONS
           </h1>
-          <p className="mt-4 max-w-3xl text-lg sm:text-xl text-neutral-200">
+          <p className="mt-4 max-w-3xl text-base sm:text-xl text-neutral-200">
             We provide comprehensive electrical solutions for residential and commercial customers, ensuring that your needs are met with efficiency and excellence.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0">
@@ -51,11 +51,11 @@ export default function Home() {
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Services</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
+            <p className="mt-4 max-w-2xl mx-auto text-muted-foreground text-base md:text-lg">
               We provide a wide range of professional electrical and construction services.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.slice(0, 4).map((service) => {
                 const serviceImage = getImage(service.gallery[0]);
                 return (
@@ -98,38 +98,38 @@ export default function Home() {
 
       {/* Why Choose Us */}
       <section className="py-16 md:py-24">
-        <div className="container grid md:grid-cols-2 gap-12 items-center">
+        <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-primary">Why Choose A.J. Tech?</h2>
-                <p className="mt-4 text-lg text-muted-foreground">
+                <p className="mt-4 text-base md:text-lg text-muted-foreground">
                     We are more than just a service provider; we are your dedicated partner in achieving excellence. Our commitment is to deliver unparalleled quality and innovative solutions.
                 </p>
                 <ul className="mt-6 space-y-4">
                     <li className="flex items-start">
                         <CheckCircle className="h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0" />
                         <div>
-                            <h4 className="font-semibold">Expert & Experienced Team</h4>
-                            <p className="text-muted-foreground">Our professionals have decades of combined experience across multiple industries.</p>
+                            <h4 className="font-semibold text-base md:text-lg">Expert & Experienced Team</h4>
+                            <p className="text-muted-foreground text-sm md:text-base">Our professionals have decades of combined experience across multiple industries.</p>
                         </div>
                     </li>
                     <li className="flex items-start">
                         <CheckCircle className="h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0" />
                         <div>
-                            <h4 className="font-semibold">Quality and Safety First</h4>
-                            <p className="text-muted-foreground">We adhere to the highest standards of quality and safety on every project.</p>
+                            <h4 className="font-semibold text-base md:text-lg">Quality and Safety First</h4>
+                            <p className="text-muted-foreground text-sm md:text-base">We adhere to the highest standards of quality and safety on every project.</p>
                         </div>
                     </li>
                     <li className="flex items-start">
                         <CheckCircle className="h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0" />
                         <div>
-                            <h4 className="font-semibold">Customer-Centric Approach</h4>
-                            <p className="text-muted-foreground">Your satisfaction is our priority. We work closely with you to meet your specific needs.</p>
+                            <h4 className="font-semibold text-base md:text-lg">Customer-Centric Approach</h4>
+                            <p className="text-muted-foreground text-sm md:text-base">Your satisfaction is our priority. We work closely with you to meet your specific needs.</p>
                         </div>
                     </li>
                 </ul>
             </div>
             {whyUsImage && (
-              <div className="relative h-80 rounded-lg overflow-hidden shadow-xl w-full aspect-video md:aspect-auto">
+              <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl w-full">
                   <Image src={whyUsImage.imageUrl} alt={whyUsImage.description} fill className="object-cover" data-ai-hint={whyUsImage.imageHint} />
               </div>
             )}
