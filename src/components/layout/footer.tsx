@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Twitter, Linkedin, Facebook } from 'lucide-react';
 import { navLinks, services } from '@/lib/data';
-import { Logo } from '../logo';
+import Image from 'next/image';
 
 export function Footer() {
   return (
@@ -10,7 +10,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col items-start space-y-4 col-span-1 lg:col-span-1">
             <Link href="/" className="flex items-center space-x-2">
-              <Logo className="h-12" />
+               <Image 
+                src="/logo.png" 
+                alt="A.J Tech Logo" 
+                width={50} 
+                height={50} 
+                className="h-12 w-auto"
+              />
               <span className="text-xl font-bold sr-only">AJ Tech Solutions</span>
             </Link>
             <p className="text-muted-foreground text-sm">

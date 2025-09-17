@@ -3,12 +3,12 @@
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { navLinks } from '@/lib/data';
-import { Logo } from '../logo';
 
 export function Header() {
   const pathname = usePathname();
@@ -18,7 +18,13 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Logo className="h-12" />
+            <Image 
+              src="/logo.png" 
+              alt="A.J Tech Logo" 
+              width={50} 
+              height={50} 
+              className="h-12 w-auto"
+            />
             <span className="hidden font-bold sm:inline-block sr-only">
               AJ Tech Solutions
             </span>
@@ -41,7 +47,13 @@ export function Header() {
         
         <div className="flex flex-1 items-center justify-between space-x-2 md:hidden">
           <Link href="/" className="flex items-center space-x-2">
-              <Logo className="h-10" />
+             <Image 
+              src="/logo.png" 
+              alt="A.J Tech Logo" 
+              width={40} 
+              height={40} 
+              className="h-10 w-auto"
+            />
               <span className="font-bold sr-only">
                 AJ Tech
               </span>
@@ -56,7 +68,13 @@ export function Header() {
             <SheetContent side="right">
               <div className="grid gap-6 text-lg font-medium p-6">
                 <Link href="/" className="flex items-center space-x-2">
-                  <Logo className="h-12" />
+                   <Image 
+                      src="/logo.png" 
+                      alt="A.J Tech Logo" 
+                      width={50} 
+                      height={50} 
+                      className="h-12 w-auto"
+                    />
                   <span className="font-bold sr-only">
                     AJ Tech Solutions
                   </span>
