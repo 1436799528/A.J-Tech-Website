@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { services } from '@/lib/data';
@@ -55,16 +56,9 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.slice(0, 4).map((service) => {
-              const serviceImage = getImage(service.gallery[0]);
-              return (
+            {services.slice(0, 4).map((service) => (
                 <Card key={service.slug} className="flex flex-col text-center items-center transition-transform transform hover:-translate-y-2 hover:shadow-primary/20 shadow-lg bg-card overflow-hidden">
                   <Link href={`/services/${service.slug}`} className="w-full">
-                    <div className="relative aspect-video">
-                        {serviceImage && (
-                            <Image src={serviceImage.imageUrl} alt={serviceImage.description} fill className="object-cover" data-ai-hint={serviceImage.imageHint} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
-                        )}
-                    </div>
                     <CardHeader>
                       <CardTitle>{service.title}</CardTitle>
                     </CardHeader>
@@ -73,8 +67,7 @@ export default function Home() {
                     </CardContent>
                   </Link>
                 </Card>
-              );
-            })}
+              ))}
           </div>
           <div className="text-center mt-12">
              <Button asChild size="lg">
