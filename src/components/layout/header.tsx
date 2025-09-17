@@ -27,11 +27,11 @@ export function Header() {
             <Image 
               src="/logo.png" 
               alt="A.J Tech Logo" 
-              width={50} 
-              height={50} 
-              className="h-12 w-auto"
+              width={40} 
+              height={40} 
+              className="h-10 w-auto"
             />
-            <span className="hidden font-bold sm:inline-block sr-only">
+            <span className="hidden font-bold sm:inline-block">
               AJ Tech Solutions
             </span>
           </Link>
@@ -42,7 +42,7 @@ export function Header() {
                 href={link.href}
                 className={cn(
                   'transition-colors hover:text-primary',
-                  pathname === link.href ? 'text-primary' : 'text-muted-foreground'
+                  pathname === link.href ? 'text-foreground' : 'text-muted-foreground'
                 )}
               >
                 {link.label}
@@ -56,11 +56,11 @@ export function Header() {
              <Image 
               src="/logo.png" 
               alt="A.J Tech Logo" 
-              width={40} 
-              height={40} 
-              className="h-10 w-auto"
+              width={32} 
+              height={32} 
+              className="h-8 w-auto"
             />
-              <span className="font-bold sr-only">
+              <span className="font-bold">
                 AJ Tech
               </span>
           </Link>
@@ -77,11 +77,11 @@ export function Header() {
                    <Image 
                       src="/logo.png" 
                       alt="A.J Tech Logo" 
-                      width={50} 
-                      height={50} 
-                      className="h-12 w-auto"
+                      width={40} 
+                      height={40} 
+                      className="h-10 w-auto"
                     />
-                  <span className="font-bold sr-only">
+                  <span className="font-bold">
                     AJ Tech Solutions
                   </span>
                 </Link>
@@ -105,7 +105,7 @@ export function Header() {
         
         <div className="hidden flex-1 items-center justify-end space-x-4 md:flex">
           <Button asChild>
-            <Link href="/contact">Contact Us</Link>
+            <Link href="/contact">Get a Quote</Link>
           </Button>
         </div>
       </div>

@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative w-full h-[70vh] md:h-[80vh]">
+      <section className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center py-20">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
@@ -27,19 +27,19 @@ export default function Home() {
             data-ai-hint={heroImage.imageHint}
           />
         )}
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative container h-full flex flex-col items-center justify-center text-center text-white px-4">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-            A.J TECH SOLUTIONS
+        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/50 to-transparent" />
+        <div className="relative container text-center text-white px-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground">
+            Powering Innovation with <span className="text-primary">A.J. Tech</span>
           </h1>
-          <p className="mt-4 max-w-3xl text-base sm:text-xl text-neutral-200">
-            We provide comprehensive electrical solutions for residential and commercial customers, ensuring that your needs are met with efficiency and excellence.
+          <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
+            Expert electrical, solar, and construction services delivering excellence and building the future.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <Button size="lg" asChild className="w-full sm:w-auto">
-              <Link href="/contact">Contact Us</Link>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" asChild>
+              <Link href="/contact">Get Started</Link>
             </Button>
-            <Button size="lg" variant="secondary" asChild className="w-full sm:w-auto">
+            <Button size="lg" variant="secondary" asChild>
               <Link href="/services">Our Services</Link>
             </Button>
           </div>
@@ -47,12 +47,12 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 md:py-24 bg-secondary/50">
+      <section id="services" className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Core Services</h2>
             <p className="mt-4 max-w-2xl mx-auto text-muted-foreground text-base md:text-lg">
-              We provide a wide range of professional electrical and construction services.
+              A commitment to quality, safety, and innovation across every project.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-card">
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-4 md:px-6">
             <div className="md:pr-8">
                 <h2 className="text-3xl md:text-4xl font-bold text-primary">Why Choose A.J. Tech?</h2>
@@ -127,10 +127,13 @@ export default function Home() {
                         </div>
                     </li>
                 </ul>
+                 <Button asChild size="lg" className="mt-8">
+                    <Link href="/about">Meet the Team</Link>
+                 </Button>
             </div>
             {whyUsImage && (
               <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl w-full">
-                  <Image src={whyUsImage.imageUrl} alt={whyUsImage.description} fill className="object-cover" data-ai-hint={whyUsImage.imageHint} />
+                  <Image src={whyUsImage.imageUrl} alt={whyUsImage.description} fill className="object-cover rounded-lg" data-ai-hint={whyUsImage.imageHint} />
               </div>
             )}
         </div>
