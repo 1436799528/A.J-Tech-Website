@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { CheckCircle, Star, User } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
@@ -30,19 +30,19 @@ export default function Home() {
           />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/50 to-transparent" />
-        <div className="relative container text-white max-w-4xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground">
-            Powering Innovation with <span className="text-primary">A.J. Tech</span>
+        <div className="relative z-10 max-w-4xl mx-auto">
+           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground">
+            Your Trusted Partner for <span className="text-primary">Safe & Reliable</span> Electrical Solutions
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-            Expert electrical, solar, and construction services delivering excellence and building the future.
+            From critical repairs to future-ready solar installations, we deliver expert craftsmanship and peace of mind for your home and business.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild>
-              <Link href="/contact">Get Started</Link>
+              <Link href="/contact">Get a Free Quote</Link>
             </Button>
             <Button size="lg" variant="secondary" asChild>
-              <Link href="/services">Our Services</Link>
+              <Link href="/services">Explore Our Services</Link>
             </Button>
           </div>
         </div>
