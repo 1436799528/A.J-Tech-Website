@@ -1,10 +1,25 @@
 
-import { blogPosts } from '@/lib/blog-data';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { format } from 'date-fns';
 import { Calendar, User } from 'lucide-react';
+import type { BlogPost } from '@/lib/types';
+import fs from 'fs';
+import path from 'path';
+
+function getBlogPosts(): BlogPost[] {
+  const filePath = path.join(process.cwd(), "data", "content.json");
+  try {
+    const fileData = fs.readFileSync(filePath, "utf-8");
+    return JSON.parse(fileData);
+  } catch (error) {
+    console.error("Failed to read blog posts:", error);
+    return [];
+  }
+}
+
+const blogPosts = getBlogPosts();
 
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({
@@ -50,6 +65,18 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               data-ai-hint={postImage.imageHint}
             />
           </div>
+        )}
+        
+        {post.video && (
+            <div className="relative mb-12 w-full" style={{paddingBottom: '56.25%'}}>
+                 <iframe
+                    className="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl"
+                    src={post.video}
+                    title={post.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
+            </div>
         )}
 
         <div 

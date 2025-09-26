@@ -31,6 +31,7 @@ export type BlogPost = {
   summary: string;
   content: string;
   image: string;
+  video?: string;
 };
 
 export type Testimonial = {

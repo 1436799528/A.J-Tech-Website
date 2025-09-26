@@ -1,15 +1,25 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { blogPosts } from '@/lib/blog-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { format } from 'date-fns';
+import type { BlogPost } from '@/lib/types';
+import fs from 'fs';
+import path from 'path';
 
 const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
+function getBlogPosts(): BlogPost[] {
+  const filePath = path.join(process.cwd(), "data", "content.json");
+  const fileData = fs.readFileSync(filePath, "utf-8");
+  const posts: BlogPost[] = JSON.parse(fileData);
+  return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
 export default function BlogPage() {
+  const blogPosts = getBlogPosts();
   return (
     <div className="container py-16 md:py-24 px-4 md:px-6">
       <div className="text-center mb-16">
