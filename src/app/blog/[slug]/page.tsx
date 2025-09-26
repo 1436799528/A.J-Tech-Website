@@ -41,7 +41,7 @@ export async function generateMetadata(
  
   return {
     title: `${post.title} | AJ Tech Solutions Blog`,
-    description: post.summary,
+    description: post.excerpt,
   }
 }
 
@@ -103,13 +103,22 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             </div>
         )}
 
-        <div 
-          className="prose max-w-none prose-h3:text-primary prose-a:text-primary hover:prose-a:text-primary/80 prose-p:text-sm prose-li:text-sm"
-          dangerouslySetInnerHTML={{ __html: post.content }} 
-        />
+        <div className="prose max-w-none prose-h3:text-primary prose-a:text-primary hover:prose-a:text-primary/80 prose-p:text-sm prose-li:text-sm">
+          {post.content.map((block, index) => {
+            if (block.type === 'paragraph') {
+              return <p key={index} className="mb-4 text-muted-foreground">{block.text}</p>;
+            }
+            if (block.type === 'list') {
+              return (
+                <ul key={index} className="list-disc list-inside space-y-3 mb-4 text-muted-foreground">
+                  {block.items.map((item, i) => <li key={i}>{item}</li>)}
+                </ul>
+              );
+            }
+            return null;
+          })}
+        </div>
       </div>
     </article>
   );
 }
-
-    

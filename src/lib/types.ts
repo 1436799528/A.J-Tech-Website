@@ -28,8 +28,8 @@ export type BlogPost = {
   title: string;
   date: string;
   author: string;
-  summary: string;
-  content: string;
+  excerpt: string;
+  content: Array<{ type: 'paragraph'; text: string } | { type: 'list'; items: string[] }>;
   image: string;
   video?: string;
 };

@@ -56,7 +56,7 @@ export default function BlogPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground text-sm">{post.summary}</p>
+                <p className="text-muted-foreground text-sm">{post.excerpt}</p>
               </CardContent>
               <div className="p-6 pt-0">
                 <Button asChild variant="link" className="p-0 h-auto text-sm">
