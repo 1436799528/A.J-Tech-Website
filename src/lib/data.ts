@@ -1,6 +1,6 @@
 
 import type { NavLink, Service, TeamMember, Testimonial, FAQ, RecentWork } from './types';
-import { Sun, Building, Zap } from 'lucide-react';
+import { Sun, Zap, HardHat, Wrench } from 'lucide-react';
 
 export const navLinks: NavLink[] = [
   { href: '/', label: 'Home' },
@@ -15,7 +15,7 @@ export const services: Service[] = [
   {
     slug: 'general-contracting',
     title: 'General Contracting',
-    Icon: Building,
+    Icon: HardHat,
     description: 'Comprehensive project management for all your construction needs, ensuring quality and timely completion.',
     longDescription: 'As your general contractor, we oversee every phase of your construction project. From coordinating with architects and engineers to managing subcontractors and sourcing materials, we ensure your project is completed on time, within budget, and to the highest standards of quality and safety.',
     gallery: ['contracting1'],
@@ -39,7 +39,7 @@ export const services: Service[] = [
   {
     slug: 'building-construction',
     title: 'Building Construction',
-    Icon: Building,
+    Icon: Wrench,
     description: 'From groundwork to finishing touches, we provide end-to-end solutions for new building constructions.',
     longDescription: 'We bring your architectural visions to life with our full-service building construction capabilities. Our experienced team manages everything from foundation and framing to electrical, plumbing, and interior finishing. We are committed to building durable, functional, and beautiful structures that stand the test of time.',
     gallery: ['construction1'],

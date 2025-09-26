@@ -11,7 +11,7 @@ export type Service = {
   title: string;
   description: string;
   longDescription: string;
-  Icon: LucideIcon | ((props: any) => JSX.Element);
+  Icon: LucideIcon;
   gallery: string[];
 };
 
