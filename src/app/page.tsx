@@ -222,9 +222,6 @@ export default function Home() {
                         </div>
                     </li>
                 </ul>
-                 <Button asChild size="lg" className="mt-8">
-                    <Link href="/about">Meet the Team</Link>
-                 </Button>
             </div>
             {whyUsImage && (
               <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl w-full">
@@ -236,5 +233,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
