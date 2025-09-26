@@ -12,8 +12,8 @@ export default function PortfolioPage() {
   return (
     <div className="container py-16 md:py-24 px-4 md:px-6">
       <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold text-primary">Our Project Portfolio</h1>
-        <p className="mt-4 text-lg text-muted-foreground">
+        <h1 className="text-3xl md:text-4xl font-bold text-primary">Our Project Portfolio</h1>
+        <p className="mt-4 text-base text-muted-foreground">
           A showcase of our commitment to quality, craftsmanship, and innovation across a range of projects.
         </p>
       </div>

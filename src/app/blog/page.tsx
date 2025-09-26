@@ -13,8 +13,8 @@ export default function BlogPage() {
   return (
     <div className="container py-16 md:py-24 px-4 md:px-6">
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-primary">From the Blog</h1>
-        <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
+        <h1 className="text-3xl md:text-4xl font-bold text-primary">From the Blog</h1>
+        <p className="mt-4 max-w-3xl mx-auto text-base text-muted-foreground">
           Insights, news, and updates from the A.J. Tech Solutions team.
         </p>
       </div>
@@ -38,7 +38,7 @@ export default function BlogPage() {
                 </Link>
               )}
               <CardHeader>
-                <CardTitle>
+                <CardTitle className="text-lg">
                   <Link href={`/blog/${post.slug}`} className="hover:text-primary transition-colors">{post.title}</Link>
                 </CardTitle>
                 <CardDescription>

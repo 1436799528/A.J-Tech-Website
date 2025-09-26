@@ -28,15 +28,15 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
           <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
             <service.Icon className="h-8 w-8 text-primary" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold">{service.title}</h1>
+          <h1 className="text-3xl md:text-4xl font-bold">{service.title}</h1>
         </div>
-        <p className="text-lg text-muted-foreground mb-12">
+        <p className="text-base text-muted-foreground mb-12">
           {service.longDescription}
         </p>
 
         {service.gallery.length > 0 && (
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-primary">Project Gallery</h2>
+            <h2 className="text-2xl font-bold mb-6 text-primary">Project Gallery</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {service.gallery.map((imageId) => {
                 const image = getImage(imageId);

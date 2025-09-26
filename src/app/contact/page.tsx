@@ -6,8 +6,8 @@ export default function ContactPage() {
   return (
     <div className="container py-16 md:py-24 px-4 md:px-6">
       <div className="text-center mb-12 md:mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-primary">Get In Touch</h1>
-        <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+        <h1 className="text-3xl md:text-4xl font-bold text-primary">Get In Touch</h1>
+        <p className="mt-4 max-w-2xl mx-auto text-base text-muted-foreground">
           We're here to help and answer any question you might have. We look forward to hearing from you.
         </p>
       </div>
@@ -19,7 +19,7 @@ export default function ContactPage() {
                     <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                    <h3 className="text-xl font-semibold">Email Us</h3>
+                    <h3 className="text-lg font-semibold">Email Us</h3>
                     <a href="mailto:a.j.engr.tech@gmail.com" className="text-muted-foreground hover:text-primary transition-colors break-all">a.j.engr.tech@gmail.com</a>
                 </div>
             </div>
@@ -28,7 +28,7 @@ export default function ContactPage() {
                     <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                    <h3 className="text-xl font-semibold">Call Us</h3>
+                    <h3 className="text-lg font-semibold">Call Us</h3>
                     <a href="tel:09130134969" className="text-muted-foreground hover:text-primary transition-colors">09130134969</a>
                 </div>
             </div>

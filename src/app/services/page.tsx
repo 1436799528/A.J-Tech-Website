@@ -12,8 +12,8 @@ export default function ServicesPage() {
   return (
     <div className="container py-16 md:py-24 px-4 md:px-6">
       <div className="text-center mb-12 md:mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-primary">Our Services</h1>
-        <p className="mt-4 max-w-3xl mx-auto text-base md:text-lg text-muted-foreground">
+        <h1 className="text-3xl md:text-4xl font-bold text-primary">Our Services</h1>
+        <p className="mt-4 max-w-3xl mx-auto text-base text-muted-foreground">
           We offer a comprehensive suite of services to bring your vision to life, from sustainable energy solutions to large-scale construction and precision electrical work.
         </p>
       </div>
@@ -39,14 +39,14 @@ export default function ServicesPage() {
                             <div className="mx-auto bg-primary/10 p-3 md:p-4 rounded-full">
                                 <service.Icon className="h-6 w-6 md:h-8 md:w-8 text-primary" />
                             </div>
-                            <CardTitle className="mt-4">{service.title}</CardTitle>
+                            <CardTitle className="mt-4 text-lg">{service.title}</CardTitle>
                         </CardHeader>
                         <CardContent className="p-0 flex-grow">
                             <p className="text-muted-foreground text-sm">{service.description}</p>
                         </CardContent>
                     </div>
                     <div className="mt-auto p-6 pt-0">
-                        <Button variant="link" className="p-0 h-auto">View Details</Button>
+                        <Button variant="link" className="p-0 h-auto text-sm">View Details</Button>
                     </div>
                 </Link>
             </Card>

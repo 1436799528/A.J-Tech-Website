@@ -31,10 +31,10 @@ export default function Home() {
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/50 to-transparent" />
         <div className="relative z-10 max-w-4xl mx-auto">
-           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground">
+           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-foreground">
             Your Trusted Partner for <span className="text-primary">Safe & Reliable</span> Electrical Solutions
           </h1>
-          <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
+          <p className="mt-6 max-w-3xl mx-auto text-base md:text-lg text-muted-foreground">
             From critical repairs to future-ready solar installations, we deliver expert craftsmanship and peace of mind for your home and business.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
@@ -52,8 +52,8 @@ export default function Home() {
       <section id="recent-work" className="py-16 md:py-24 bg-card">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12 max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Recent Work</h2>
-            <p className="mt-4 text-muted-foreground text-base md:text-lg">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary">Our Recent Work</h2>
+            <p className="mt-4 text-muted-foreground text-sm md:text-base">
               A glimpse into our latest projects and commitment to quality craftsmanship.
             </p>
           </div>
@@ -94,8 +94,8 @@ export default function Home() {
       <section id="services" className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12 max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Core Services</h2>
-            <p className="mt-4 text-muted-foreground text-base md:text-lg">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary">Our Core Services</h2>
+            <p className="mt-4 text-muted-foreground text-sm md:text-base">
               A commitment to quality, safety, and innovation across every project.
             </p>
           </div>
@@ -121,10 +121,10 @@ export default function Home() {
                                 <service.Icon className="h-8 w-8 text-primary" />
                             </div>
                             <CardHeader className="p-0 mb-2">
-                            <CardTitle className="text-xl">{service.title}</CardTitle>
+                            <CardTitle className="text-lg">{service.title}</CardTitle>
                             </CardHeader>
                             <CardContent className="p-0 flex-grow">
-                            <p className="text-muted-foreground text-sm">{service.description}</p>
+                            <p className="text-muted-foreground text-xs">{service.description}</p>
                             </CardContent>
                         </div>
                     </Link>
@@ -144,8 +144,8 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-background">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12 max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">What Our Clients Say</h2>
-            <p className="mt-4 text-muted-foreground text-base md:text-lg">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary">What Our Clients Say</h2>
+            <p className="mt-4 text-muted-foreground text-sm md:text-base">
               Building trust through exceptional service and proven results.
             </p>
           </div>
@@ -197,30 +197,30 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-card">
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-4 md:px-6 max-w-6xl mx-auto">
             <div className="md:pr-8">
-                <h2 className="text-3xl md:text-4xl font-bold text-primary">Why Choose A.J. Tech?</h2>
-                <p className="mt-4 text-base md:text-lg text-muted-foreground">
+                <h2 className="text-2xl md:text-3xl font-bold text-primary">Why Choose A.J. Tech?</h2>
+                <p className="mt-4 text-sm md:text-base text-muted-foreground">
                     We are more than just a service provider; we are your dedicated partner in achieving excellence. Our commitment is to deliver unparalleled quality and innovative solutions.
                 </p>
                 <ul className="mt-6 space-y-4">
                     <li className="flex items-start">
                         <CheckCircle className="h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0" />
                         <div>
-                            <h4 className="font-semibold text-base md:text-lg">Expert & Experienced Team</h4>
-                            <p className="text-muted-foreground text-sm md:text-base">Our professionals have decades of combined experience across multiple industries.</p>
+                            <h4 className="font-semibold text-base">Expert & Experienced Team</h4>
+                            <p className="text-muted-foreground text-sm">Our professionals have decades of combined experience across multiple industries.</p>
                         </div>
                     </li>
                     <li className="flex items-start">
                         <CheckCircle className="h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0" />
                         <div>
-                            <h4 className="font-semibold text-base md:text-lg">Quality and Safety First</h4>
-                            <p className="text-muted-foreground text-sm md:text-base">We adhere to the highest standards of quality and safety on every project.</p>
+                            <h4 className="font-semibold text-base">Quality and Safety First</h4>
+                            <p className="text-muted-foreground text-sm">We adhere to the highest standards of quality and safety on every project.</p>
                         </div>
                     </li>
                     <li className="flex items-start">
                         <CheckCircle className="h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0" />
                         <div>
-                            <h4 className="font-semibold text-base md:text-lg">Customer-Centric Approach</h4>
-                            <p className="text-muted-foreground text-sm md:text-base">Your satisfaction is our priority. We work closely with you to meet your specific needs.</p>
+                            <h4 className="font-semibold text-base">Customer-Centric Approach</h4>
+                            <p className="text-muted-foreground text-sm">Your satisfaction is our priority. We work closely with you to meet your specific needs.</p>
                         </div>
                     </li>
                 </ul>

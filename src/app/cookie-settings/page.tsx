@@ -13,8 +13,8 @@ export default function CookieSettingsPage() {
   return (
     <div className="container py-16 md:py-24 px-4 md:px-6">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-primary mb-8">Cookie Settings</h1>
-        <div className="prose prose-lg max-w-none prose-h2:text-primary prose-a:text-primary hover:prose-a:text-primary/80 prose-p:text-base prose-li:text-base text-muted-foreground space-y-6">
+        <h1 className="text-3xl font-bold text-primary mb-8">Cookie Settings</h1>
+        <div className="prose max-w-none prose-h2:text-primary prose-a:text-primary hover:prose-a:text-primary/80 prose-p:text-sm prose-li:text-sm text-muted-foreground space-y-6">
           <p>Last Updated: {currentDate}</p>
 
           <section>
