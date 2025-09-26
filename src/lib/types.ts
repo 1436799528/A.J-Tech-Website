@@ -42,3 +42,9 @@ export type FAQ = {
   question: string;
   answer: string;
 };
+
+export type RecentWork = {
+  title: string;
+  description: string;
+  image: string;
+};

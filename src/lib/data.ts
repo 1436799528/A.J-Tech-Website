@@ -1,5 +1,5 @@
 
-import type { NavLink, Service, TeamMember, Testimonial, FAQ } from './types';
+import type { NavLink, Service, TeamMember, Testimonial, FAQ, RecentWork } from './types';
 import { Sun, Building, Zap } from 'lucide-react';
 
 export const navLinks: NavLink[] = [
@@ -125,5 +125,23 @@ export const faqData: FAQ[] = [
   {
     question: "Can you handle large-scale construction projects?",
     answer: "Yes, our general contracting and building construction divisions are equipped to handle projects of all sizes, from residential homes to commercial buildings. We have the experience and resources to manage your project from concept to completion."
+  }
+];
+
+export const recentWork: RecentWork[] = [
+  {
+    title: 'Commercial LED Lighting Retrofit',
+    description: 'Upgraded a 50,000 sq. ft. warehouse to energy-efficient LED lighting, reducing energy costs by 40%.',
+    image: 'work1',
+  },
+  {
+    title: 'Residential Solar Installation',
+    description: 'Installed a 10kW rooftop solar system for a family home, providing 100% of their energy needs.',
+    image: 'work2',
+  },
+  {
+    title: 'New Construction Electrical Wiring',
+    description: 'Completed full electrical wiring and panel installation for a new custom-built luxury home.',
+    image: 'work3',
   }
 ];
