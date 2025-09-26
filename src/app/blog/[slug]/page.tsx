@@ -7,6 +7,7 @@ import { Calendar, User } from 'lucide-react';
 import type { BlogPost } from '@/lib/types';
 import fs from 'fs';
 import path from 'path';
+import { Metadata, ResolvingMetadata } from 'next';
 
 function getBlogPosts(): BlogPost[] {
   const filePath = path.join(process.cwd(), "data", "content.json");
@@ -20,6 +21,29 @@ function getBlogPosts(): BlogPost[] {
 }
 
 const blogPosts = getBlogPosts();
+
+type Props = {
+  params: { slug: string }
+}
+
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const post = blogPosts.find((p) => p.slug === params.slug);
+ 
+  if (!post) {
+    return {
+        title: 'Post Not Found',
+        description: 'This blog post could not be found.',
+    }
+  }
+ 
+  return {
+    title: `${post.title} | AJ Tech Solutions Blog`,
+    description: post.summary,
+  }
+}
 
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({
