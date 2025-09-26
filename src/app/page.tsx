@@ -103,7 +103,6 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.slice(0, 4).map((service) => {
                 const serviceImage = getImage(service.gallery[0]);
-                const bgColor = service.color?.replace('text-', 'bg-') + '/10';
                 return (
                     <Card key={service.slug} className="flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-primary/20 shadow-lg bg-card overflow-hidden">
                     <Link href={`/services/${service.slug}`} className="w-full flex flex-col h-full">
@@ -119,14 +118,11 @@ export default function Home() {
                             </div>
                         )}
                         <div className="p-6 flex flex-col items-center text-center flex-grow">
-                            <div className={cn("p-3 rounded-full mb-4", bgColor)}>
-                                <service.Icon className={cn("h-8 w-8", service.color)} />
-                            </div>
-                            <CardHeader className="p-0 mb-2">
-                            <CardTitle className="text-lg">{service.title}</CardTitle>
+                             <CardHeader className="p-0 mb-2">
+                                <CardTitle className="text-lg">{service.title}</CardTitle>
                             </CardHeader>
                             <CardContent className="p-0 flex-grow">
-                            <p className="text-muted-foreground text-xs">{service.description}</p>
+                                <p className="text-muted-foreground text-xs">{service.description}</p>
                             </CardContent>
                         </div>
                     </Link>
@@ -240,3 +236,5 @@ export default function Home() {
     </div>
   );
 }
+
+    

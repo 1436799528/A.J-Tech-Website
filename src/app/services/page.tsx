@@ -5,6 +5,7 @@ import { services } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
@@ -36,8 +37,8 @@ export default function ServicesPage() {
                     )}
                     <div className="p-6 flex flex-col items-center text-center flex-grow">
                         <CardHeader className="p-0 mb-4">
-                            <div className="mx-auto bg-primary/10 p-3 md:p-4 rounded-full">
-                                <service.Icon className="h-6 w-6 md:h-8 md:w-8 text-primary" />
+                             <div className={cn("p-3 rounded-full mb-4 mx-auto", service.color?.replace('text-', 'bg-') + '/10')}>
+                                <service.Icon className={cn("h-8 w-8", service.color)} />
                             </div>
                             <CardTitle className="mt-4 text-lg">{service.title}</CardTitle>
                         </CardHeader>
@@ -56,3 +57,5 @@ export default function ServicesPage() {
     </div>
   );
 }
+
+    
