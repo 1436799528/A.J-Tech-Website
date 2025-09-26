@@ -13,6 +13,7 @@ export type Service = {
   longDescription: string;
   Icon: LucideIcon;
   gallery: string[];
+  color?: string;
 };
 
 export type TeamMember = {
