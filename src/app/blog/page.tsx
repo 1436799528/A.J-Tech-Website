@@ -1,15 +1,12 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { format } from 'date-fns';
 import type { BlogPost } from '@/lib/types';
 import fs from 'fs';
 import path from 'path';
-
-const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
 function getBlogPosts(): BlogPost[] {
   const filePath = path.join(process.cwd(), "data", "content.json");
@@ -31,18 +28,16 @@ export default function BlogPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogPosts.map((post) => {
-          const postImage = getImage(post.image);
           return (
             <Card key={post.slug} className="flex flex-col overflow-hidden">
-               {postImage && (
+               {post.image && (
                 <Link href={`/blog/${post.slug}`}>
                   <div className="relative h-56 w-full">
                     <Image
-                      src={postImage.imageUrl}
+                      src={post.image}
                       alt={post.title}
                       fill
                       className="object-cover"
-                      data-ai-hint={postImage.imageHint}
                     />
                   </div>
                 </Link>

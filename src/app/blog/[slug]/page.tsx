@@ -1,7 +1,6 @@
 
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { format } from 'date-fns';
 import { Calendar, User } from 'lucide-react';
 import type { BlogPost } from '@/lib/types';
@@ -51,8 +50,6 @@ export async function generateStaticParams() {
   }));
 }
 
-const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
-
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const post = blogPosts.find((p) => p.slug === params.slug);
 
@@ -60,8 +57,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     notFound();
   }
   
-  const postImage = getImage(post.image);
-
   return (
     <article className="container py-16 md:py-24 px-4 md:px-6">
       <div className="max-w-4xl mx-auto">
@@ -79,14 +74,13 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </div>
         </header>
 
-        {postImage && (
+        {post.image && (
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden shadow-xl mb-12 w-full">
             <Image
-              src={postImage.imageUrl}
+              src={post.image}
               alt={post.title}
               fill
               className="object-cover"
-              data-ai-hint={postImage.imageHint}
             />
           </div>
         )}
