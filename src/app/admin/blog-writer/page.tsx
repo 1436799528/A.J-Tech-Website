@@ -34,7 +34,13 @@ export default function BlogWriterPage() {
     },
   });
 
-  const { formState } = form;
+  const { formState, handleSubmit } = form;
+
+  const handleFormSubmit = (data: BlogWriterFormValues) => {
+    const formData = new FormData();
+    formData.append('topic', data.topic);
+    formAction(formData);
+  };
 
   return (
     <div className="container py-16 md:py-24 px-4 md:px-6">
@@ -43,17 +49,13 @@ export default function BlogWriterPage() {
           <CardHeader>
             <CardTitle>AI Blog Post Generator</CardTitle>
             <CardDescription>
-              Enter a topic, and the AI will generate a draft for a new blog post.
+              Enter a topic, and the AI will generate and save a draft for a new blog post.
             </CardDescription>
           </CardHeader>
           <CardContent>
             <Form {...form}>
               <form
-                action={formAction}
-                onSubmit={form.handleSubmit((_data, event) => {
-                  const formData = new FormData(event?.target as HTMLFormElement);
-                  formAction(formData);
-                })}
+                onSubmit={handleSubmit(handleFormSubmit)}
                 className="space-y-6"
               >
                 <FormField
@@ -71,11 +73,11 @@ export default function BlogWriterPage() {
                 />
                 <Button type="submit" disabled={formState.isSubmitting} className="w-full">
                   {formState.isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                  {formState.isSubmitting ? 'Generating...' : 'Generate Post'}
+                  {formState.isSubmitting ? 'Generating...' : 'Generate & Save Post'}
                 </Button>
-                {state.isError && state.message && (
-                  <Alert variant="destructive">
-                    <AlertTitle>Error</AlertTitle>
+                {state.message && (
+                  <Alert variant={state.isError ? "destructive" : "default"}>
+                    <AlertTitle>{state.isError ? "Error" : "Success"}</AlertTitle>
                     <AlertDescription>{state.message}</AlertDescription>
                   </Alert>
                 )}
@@ -84,24 +86,24 @@ export default function BlogWriterPage() {
           </CardContent>
         </Card>
 
-        {state.blogPost && (
+        {formState.isSubmitSuccessful && state.blogPost && (
           <Card className="mt-8 shadow-lg">
             <CardHeader>
               <CardTitle>Generated Post</CardTitle>
-              <CardDescription>Review and edit the generated content below. You can copy and paste it into your CMS.</CardDescription>
+              <CardDescription>Review and edit the generated content below. This has been saved to `data/content.json` and is now live on your blog.</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-2">
                 <Label htmlFor="generated-title">Title</Label>
-                <Input id="generated-title" defaultValue={state.blogPost.title} />
+                <Input id="generated-title" readOnly defaultValue={state.blogPost.title} />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="generated-excerpt">Excerpt</Label>
-                <Textarea id="generated-excerpt" defaultValue={state.blogPost.excerpt} className="min-h-[80px]" />
+                <Textarea id="generated-excerpt" readOnly defaultValue={state.blogPost.excerpt} className="min-h-[80px]" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="generated-content">Content (JSON)</Label>
-                <Textarea id="generated-content" defaultValue={JSON.stringify(state.blogPost.content, null, 2)} className="min-h-[300px] font-mono text-xs" />
+                <Textarea id="generated-content" readOnly defaultValue={JSON.stringify(state.blogPost.content, null, 2)} className="min-h-[300px] font-mono text-xs" />
               </div>
             </CardContent>
           </Card>
