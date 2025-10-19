@@ -3,7 +3,7 @@
     {
       "id": "hero",
       "description": "Engineer reviewing blueprints on a construction site",
-      "imageUrl": "https://images.unsplash.com/photo-1581092335331-5e00ac65e934?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlbmdpbmVlciUyMGJsdWVwcmludHN8ZW58MHx8fHwxNzU4OTE5MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0023.jpg",
       "imageHint": "engineer blueprints"
     },
     {
@@ -45,43 +45,43 @@
     {
       "id": "about-us",
       "description": "Modern engineering facility exterior",
-      "imageUrl": "https://images.unsplash.com/photo-1724118135465-edeef6acf221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlbmdpbmVlcmluZyUyMGZhY2lsaXR5fGVufDB8fHx8MTc1ODkxOTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0025.jpg",
       "imageHint": "engineering facility"
     },
     {
       "id": "solar-roi",
       "description": "Rooftop solar panels on a suburban home.",
-      "imageUrl": "https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyb29mdG9wJTIwc29sYXJ8ZW58MHx8fHwxNzU4ODYxNzU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0026.jpg",
       "imageHint": "rooftop solar"
     },
     {
       "id": "electrical-mistakes",
       "description": "An electrician carefully inspecting a complex residential wiring panel.",
-      "imageUrl": "https://images.unsplash.com/photo-1665242043190-0ef29390d289?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlbGVjdHJpY2lhbiUyMHdvcmtpbmd8ZW58MHx8fHwxNzU4ODc4NzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0027.jpg",
       "imageHint": "electrician working"
     },
     {
       "id": "construction-trends",
       "description": "A modern building with a facade of glass and steel, showing futuristic architectural design.",
-      "imageUrl": "https://images.unsplash.com/photo-1615406020658-6c4b805f1f30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzU4ODM4NDQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0029.jpg",
       "imageHint": "modern architecture"
     },
     {
       "id": "work1",
       "description": "Brightly lit commercial warehouse with new LED fixtures.",
-      "imageUrl": "https://images.unsplash.com/photo-1614494566200-fbd1a2c9ef72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3YXJlaG91c2UlMjBsaWdodGluZ3xlbnwwfHx8fDE3NTg5MTkyMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0030.jpg",
       "imageHint": "warehouse lighting"
     },
     {
       "id": "work2",
       "description": "Sunny day with solar panels gleaming on a residential rooftop.",
-      "imageUrl": "https://images.unsplash.com/photo-1583345237708-add35a664d77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb29mdG9wJTIwc29sYXJ8ZW58MHx8fHwxNzU4ODYxNzU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0031.jpg",
       "imageHint": "rooftop solar"
     },
     {
       "id": "work3",
       "description": "Clean and organized electrical wiring in a new home under construction.",
-      "imageUrl": "https://images.unsplash.com/photo-1608574839637-2f7d0290d01d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlbGVjdHJpY2FsJTIwd2lyaW5nfGVufDB8fHx8MTc1ODgzNDc4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0032.jpg",
       "imageHint": "electrical wiring"
     },
     {
