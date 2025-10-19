@@ -8,51 +8,51 @@
     },
     {
       "id": "whyus",
-      "description": "Team of engineers collaborating on a project",
+      "description": "Company values graphic with icons for safety, reliability, and expertise.",
       "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/d06ce82069fcec7c0fcecf2213c675e658d97f65/public/images/Green%20And%20Orange%20Modern%20Electrical%20Service%20Instagram%20Post.png",
       "imageHint": "company values"
     },
     {
       "id": "solar1",
-      "description": "A team photo of AJ Tech Solutions",
+      "description": "A solar technician installing a solar panel on a roof.",
       "imageUrl": "https://sitecapture.com/wp-content/uploads/2022/09/Top-3-essential-skills-of-the-ideal-solar-technician-1024x576.jpg",
       "imageHint": "solar panels"
     },
     {
       "id": "solar4",
-      "description": "The general team of AJ Tech Solutions",
+      "description": "An installer working on a large-scale solar panel array.",
       "imageUrl": "https://goodwill-electrical.co.uk/wp-content/uploads/2022/04/solar-panel-installer-scaled.jpg",
       "imageHint": "solar installation"
     },
     {
       "id": "contracting1",
-      "description": "Aponi James in action",
+      "description": "A construction worker on a steel frame building project.",
       "imageUrl": "https://structuralbeam.com/wp-content/uploads/2022/03/Steel-framing-contractors-1024x576.jpg",
       "imageHint": "contracting project"
     },
     {
       "id": "repair1",
-      "description": "Electrician working on an electrical panel",
+      "description": "An electrician working on a residential electrical panel.",
       "imageUrl": "https://cosmosparks.com/wp-content/uploads/2021/10/Cosmosparks-ElectricaElectrical-Services.jpg",
       "imageHint": "electrician panel"
     },
     {
       "id": "construction1",
-      "description": "Technician in action",
+      "description": "A large tower crane on a high-rise building construction site.",
       "imageUrl": "https://www.ny-engineers.com/hubfs/towercrane.jpg",
       "imageHint": "construction site"
     },
     {
       "id": "about-us",
-      "description": "Modern engineering facility exterior",
+      "description": "An image of the A.J. Tech Solutions team.",
       "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0025.jpg",
-      "imageHint": "engineering facility"
+      "imageHint": "team photo"
     },
     {
       "id": "solar-roi",
-      "description": "Rooftop solar panels on a suburban home.",
+      "description": "A team member working on an electrical installation.",
       "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0026.jpg",
-      "imageHint": "rooftop solar"
+      "imageHint": "electrical installation"
     },
     {
       "id": "electrical-mistakes",
