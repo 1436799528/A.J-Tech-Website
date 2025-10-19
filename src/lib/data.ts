@@ -55,19 +55,19 @@ export const teamMembers: TeamMember[] = [
         name: 'Aponi James',
         role: 'Founder & Lead Engineer',
         bio: 'The visionary behind A.J Tech, Aponi is an Electrical Engineering student at the University of Calabar with a passion for innovation and hands-on problem-solving.',
-        image: 'team1',
+        image: 'https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0024.jpg',
     },
     {
         name: 'Alozie Gospower',
         role: 'Managing Director',
         bio: 'A 300-level Electrical Engineering student at the University of Calabar, Alozie brings sharp project management skills and strategic oversight to the team.',
-        image: 'team2',
+        image: 'https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/dcf020126deb9e47e13ff3af7568bf9b9843e651/public/images/WhatsApp%20Image%202025-10-19%20at%2013.55.42_10adf1c8.jpg',
     },
     {
         name: 'Emmanuel Adekunle',
         role: 'Construction & Safety Lead',
         bio: 'Emmanuel studies Civil Engineering at the University of Calabar and ensures all our construction projects meet the highest standards of safety and structural integrity.',
-        image: 'team3',
+        image: 'https://images.unsplash.com/photo-1520899723233-a2ffe9110431?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
 ];
 

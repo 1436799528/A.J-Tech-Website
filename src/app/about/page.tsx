@@ -67,9 +67,12 @@ export default function AboutPage() {
               <Card key={member.name} className="text-center">
                 <CardContent className="pt-6">
                     <Avatar className="h-40 w-40 mx-auto mb-4 border-2 border-primary/10 shadow-lg">
-                         <div className="flex h-full w-full items-center justify-center rounded-full bg-card">
-                            <User className="h-20 w-20 text-muted-foreground" />
-                        </div>
+                         <AvatarImage src={member.image} alt={member.name} className="object-cover" />
+                         <AvatarFallback>
+                            <div className="flex h-full w-full items-center justify-center rounded-full bg-card">
+                                <User className="h-20 w-20 text-muted-foreground" />
+                            </div>
+                        </AvatarFallback>
                     </Avatar>
                   <CardHeader className="p-0">
                     <CardTitle className="text-xl">{member.name}</CardTitle>
