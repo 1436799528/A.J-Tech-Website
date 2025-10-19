@@ -79,28 +79,28 @@ export const teamMembers: TeamMember[] = [
 
 export const testimonials: Testimonial[] = [
   {
-    name: 'Sarah L.',
-    company: 'Homeowner, Springfield',
+    name: 'Adebayo Popoola',
+    company: 'Homeowner, Lagos',
     quote: 'The team at A.J. Tech was professional, efficient, and incredibly knowledgeable. They upgraded our entire electrical panel and we couldn\'t be happier with the results. Highly recommend!',
   },
   {
-    name: 'Tom P.',
-    company: 'Business Owner, Metro City',
+    name: 'Chinedu Okoro',
+    company: 'Business Owner, Abuja',
     quote: 'Our new solar installation has already cut our energy bills by 60%. The process was seamless from start to finish. A.J. Tech delivered on every promise.',
   },
   {
-    name: 'David R.',
-    company: 'General Contractor',
+    name: 'Bolanle Adeyemi',
+    company: 'General Contractor, Port Harcourt',
     quote: 'As a contractor, I rely on dependable partners. A.J. Tech is my go-to for all electrical work. They are reliable, safe, and their quality of work is second to none.',
   },
    {
-    name: 'Emily C.',
-    company: 'Real Estate Developer',
+    name: 'Ngozi Eze',
+    company: 'Real Estate Developer, Calabar',
     quote: 'We partnered with A.J. Tech on a new housing development. Their general contracting and construction team was phenomenal, keeping the project on schedule and on budget.',
   },
   {
-    name: 'Michael B.',
-    company: 'Homeowner, Oakwood',
+    name: 'Musa Ibrahim',
+    company: 'Homeowner, Kano',
     quote: 'I had an emergency electrical issue and A.J. Tech responded immediately. They fixed the problem quickly and at a fair price. True professionals.',
   },
 ];
@@ -149,3 +149,4 @@ export const recentWork: RecentWork[] = [
     image: 'work3',
   }
 ];
+
