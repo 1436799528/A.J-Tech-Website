@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { navLinks } from '@/lib/data';
 
@@ -72,6 +72,12 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
+              <SheetHeader className="sr-only">
+                <SheetTitle>Mobile Menu</SheetTitle>
+                <SheetDescription>
+                  Navigation links for AJ Tech Solutions.
+                </SheetDescription>
+              </SheetHeader>
               <div className="grid gap-6 text-lg font-medium p-6">
                 <Link href="/" className="flex items-center space-x-2" onClick={handleLinkClick}>
                    <Image 
