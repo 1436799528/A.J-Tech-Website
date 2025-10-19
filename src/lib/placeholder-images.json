@@ -15,20 +15,20 @@
     {
       "id": "solar1",
       "description": "A team photo of AJ Tech Solutions",
-      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/dcf020126deb9e47e13ff3af7568bf9b9843e651/public/images/Team%20photo.jpg",
-      "imageHint": "team photo"
+      "imageUrl": "https://tristateec.com/wp-content/uploads/2023/07/commercial-solar-scaled.jpg",
+      "imageHint": "solar panels"
     },
     {
       "id": "solar4",
       "description": "The general team of AJ Tech Solutions",
-      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/dcf020126deb9e47e13ff3af7568bf9b9843e651/public/images/General%20team%20photo.jpg",
-      "imageHint": "team photo"
+      "imageUrl": "https://goodwill-electrical.co.uk/wp-content/uploads/2022/04/solar-panel-installer-scaled.jpg",
+      "imageHint": "solar installation"
     },
     {
       "id": "contracting1",
       "description": "Aponi James in action",
-      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/dcf020126deb9e47e13ff3af7568bf9b9843e651/public/images/Aponi%20fly.jpg",
-      "imageHint": "engineer action"
+      "imageUrl": "https://resource-erectors.com/wp-content/uploads/2019/02/DSC_0131-1080x675.jpg",
+      "imageHint": "contracting project"
     },
     {
       "id": "repair1",
@@ -39,8 +39,8 @@
     {
       "id": "construction1",
       "description": "Technician in action",
-      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/dcf020126deb9e47e13ff3af7568bf9b9843e651/public/images/jump%20photo.jpg",
-      "imageHint": "technician action"
+      "imageUrl": "https://magnifyelectric.com/wp-content/uploads/2023/07/General-Contracting-in-South-Windsor-CT.jpg",
+      "imageHint": "construction site"
     },
     {
       "id": "about-us",
@@ -87,7 +87,7 @@
     {
       "id": "team1",
       "description": "Portrait of a confident young male engineer.",
-      "imageUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0024.jpg",
       "imageHint": "male engineer"
     },
     {
