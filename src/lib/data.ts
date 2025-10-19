@@ -129,18 +129,18 @@ export const faqData: FAQ[] = [
 
 export const recentWork: RecentWork[] = [
   {
-    title: 'Commercial LED Lighting Retrofit',
-    description: 'Upgraded a 50,000 sq. ft. warehouse to energy-efficient LED lighting, reducing energy costs by 40%.',
-    image: 'work1',
+    title: 'Rooftop Solar Solutions',
+    description: 'Clean, modern solar panel installations for residential properties.',
+    image: 'solar-rooftop-2',
   },
   {
-    title: 'Residential Solar Installation',
-    description: 'Installed a 10kW rooftop solar system for a family home, providing 100% of their energy needs.',
-    image: 'work2',
+    title: 'Steel Frame Construction',
+    description: 'Erecting durable steel frames for new building projects.',
+    image: 'construction-steel-frame',
   },
   {
-    title: 'New Construction Electrical Wiring',
-    description: 'Completed full electrical wiring and panel installation for a new custom-built luxury home.',
-    image: 'work3',
+    title: 'Expert Electrical Services',
+    description: 'Precision electrical work inside a complex service panel.',
+    image: 'repair1',
   }
 ];
