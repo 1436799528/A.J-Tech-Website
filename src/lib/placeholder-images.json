@@ -14,21 +14,21 @@
     },
     {
       "id": "solar1",
-      "description": "Commercial solar panel installation",
-      "imageUrl": "https://goodwill-electrical.co.uk/wp-content/uploads/2025/04/commercial-solar-panel-installation-4.webp",
-      "imageHint": "commercial solar"
+      "description": "A team photo of AJ Tech Solutions",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/dcf020126deb9e47e13ff3af7568bf9b9843e651/public/images/Team%20photo.jpg",
+      "imageHint": "team photo"
     },
     {
       "id": "solar4",
-      "description": "Solar panel installation on a roof",
-      "imageUrl": "https://passionelectric.com/wp-content/uploads/Solar-Panel-Installation-1024x576.jpg",
-      "imageHint": "rooftop solar"
+      "description": "The general team of AJ Tech Solutions",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/dcf020126deb9e47e13ff3af7568bf9b9843e651/public/images/General%20team%20photo.jpg",
+      "imageHint": "team photo"
     },
     {
       "id": "contracting1",
-      "description": "High voltage industrial electrical project",
-      "imageUrl": "https://tristateec.com/wp-content/uploads/2021/04/2021-03-working-on-high-voltage-industrial-electrical-project-chattnooga.jpg",
-      "imageHint": "industrial electrical"
+      "description": "Aponi James in action",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/dcf020126deb9e47e13ff3af7568bf9b9843e651/public/images/Aponi%20fly.jpg",
+      "imageHint": "engineer action"
     },
     {
       "id": "repair1",
