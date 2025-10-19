@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Twitter, Linkedin, Facebook } from 'lucide-react';
 import { navLinks } from '@/lib/data';
@@ -62,7 +63,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-border/20 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} AJ Tech Solutions. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AJ Tech Solutions. All rights reserved. | <Link href="/admin/blog-writer" className="hover:text-primary">Blog Writer</Link></p>
         </div>
       </div>
     </footer>
