@@ -1,40 +1,85 @@
 
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { teamMembers } from '@/lib/data';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
 export default function AboutPage() {
   const aboutImage = getImage('about-us');
+  const founder = teamMembers.find(member => member.name === 'Aponi James');
+  const otherMembers = teamMembers.filter(member => member.name !== 'Aponi James');
+
   return (
     <div className="container py-16 md:py-24 px-4 md:px-6">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12 md:mb-16">
-          <h1 className="text-3xl md:text-4xl font-bold text-primary">About Aponi James</h1>
-          <p className="mt-4 max-w-3xl mx-auto text-base text-muted-foreground">
-            The Founder of A.J Tech Solutions
-          </p>
-        </div>
+      {/* Company Intro */}
+      <div className="max-w-4xl mx-auto text-center mb-16 md:mb-24">
+        <h1 className="text-3xl md:text-4xl font-bold text-primary">About A.J. Tech Solutions</h1>
+        <p className="mt-4 max-w-3xl mx-auto text-base text-muted-foreground">
+          At A.J. Tech Solutions, we are more than just engineers and technicians; we are innovators driven by a passion for building a brighter, more connected future. Founded on the principles of safety, reliability, and cutting-edge technical expertise, our mission is to deliver exceptional electrical, solar, and construction services that not only meet but exceed expectations. We believe in blending modern technology with time-honored craftsmanship to solve real-world problems for our clients across Nigeria.
+        </p>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 items-center">
-          {aboutImage && (
-            <div className="md:col-span-2 relative h-96 rounded-lg overflow-hidden shadow-xl w-full">
-                <Image src={aboutImage.imageUrl} alt={aboutImage.description} fill className="object-cover" data-ai-hint={aboutImage.imageHint}/>
+      {/* Founder Section */}
+      {founder && (
+        <div className="max-w-5xl mx-auto mb-16 md:mb-24">
+            <div className="text-center mb-12">
+                 <h2 className="text-2xl md:text-3xl font-bold">Our Founder</h2>
             </div>
-          )}
-          <div className="md:col-span-3">
-              <p className="text-muted-foreground mb-4 text-sm md:text-base">
-                  Aponi James, born on August 14, 2005, is a passionate and forward-thinking Electrical Engineering student at the prestigious University of Calabar, Cross River State, Nigeria. From a young age, he’s been driven by a curiosity for how things work — not just to understand electricity, but to master it. That same drive has grown into <strong>A.J Tech</strong>, a hands-on electrical service brand known for delivering smart, safe, and reliable electrical installations for homes, businesses, and industrial spaces.
-              </p>
-              <p className="text-muted-foreground mb-4 text-sm md:text-base">
-                  James blends technical skill with creativity, always looking for better ways to solve real problems — from clean energy solutions like solar setups to structured building installations that meet professional standards. He believes every project should not just <em>work</em>, but also <em>last</em> — and that the future of engineering lies in precision, integrity, and continuous learning.
-              </p>
-              <p className="text-muted-foreground text-sm md:text-base">
-                  Beyond his technical work, Aponi represents the new wave of young African engineers — self-taught, ambitious, and determined to build a better standard of living through technology. His mission is simple: to light up lives, connect systems, and inspire others to pursue technical excellence with the same fire that fuels him every day.
-              </p>
-          </div>
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 items-center">
+                 {(() => {
+                    const founderImage = getImage(founder.image);
+                    return founderImage && (
+                        <div className="md:col-span-2 relative h-96 rounded-lg overflow-hidden shadow-xl w-full">
+                            <Image src={founderImage.imageUrl} alt={founder.name} fill className="object-cover" data-ai-hint={founderImage.imageHint}/>
+                        </div>
+                    );
+                })()}
+                <div className="md:col-span-3">
+                    <h3 className="text-2xl font-bold text-primary mb-2">{founder.name}</h3>
+                    <p className="text-muted-foreground mb-4 text-sm md:text-base">
+                        {founder.bio}
+                    </p>
+                    <p className="text-muted-foreground text-sm md:text-base">
+                        Beyond his technical work, Aponi represents the new wave of young African engineers—self-taught, ambitious, and determined to build a better standard of living through technology. His mission is simple: to light up lives, connect systems, and inspire others to pursue technical excellence with the same fire that fuels him every day.
+                    </p>
+                </div>
+            </div>
+        </div>
+      )}
+      
+      {/* Team Section */}
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold">Meet Our Core Team</h2>
+             <p className="mt-4 max-w-2xl mx-auto text-base text-muted-foreground">
+                Collaboration and expertise are at the heart of what we do.
+            </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {otherMembers.map((member) => {
+            const memberImage = getImage(member.image);
+            return (
+              <Card key={member.name} className="text-center">
+                <CardContent className="pt-6">
+                  {memberImage && (
+                     <div className="relative h-40 w-40 rounded-full mx-auto mb-4 overflow-hidden shadow-lg">
+                        <Image src={memberImage.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={memberImage.imageHint} />
+                    </div>
+                  )}
+                  <CardHeader className="p-0">
+                    <CardTitle className="text-xl">{member.name}</CardTitle>
+                    <p className="text-primary font-semibold text-sm">{member.role}</p>
+                  </CardHeader>
+                  <p className="text-muted-foreground text-sm mt-3">{member.bio}</p>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
+
     </div>
   );
 }

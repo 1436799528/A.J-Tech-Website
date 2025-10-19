@@ -83,6 +83,24 @@
       "description": "Clean and organized electrical wiring in a new home under construction.",
       "imageUrl": "https://images.unsplash.com/photo-1608574839637-2f7d0290d01d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlbGVjdHJpY2FsJTIwd2lyaW5nfGVufDB8fHx8MTc1ODgzNDc4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "electrical wiring"
+    },
+    {
+      "id": "team1",
+      "description": "Portrait of a confident young male engineer.",
+      "imageUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "male engineer"
+    },
+    {
+      "id": "team2",
+      "description": "Portrait of a smiling female engineering student.",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "female engineer"
+    },
+    {
+      "id": "team3",
+      "description": "Portrait of a male construction lead in a hard hat.",
+      "imageUrl": "https://images.unsplash.com/photo-1520899723233-a2ffe9110431?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "construction worker"
     }
   ]
 }
