@@ -52,28 +52,22 @@ export const services: Service[] = [
 
 export const teamMembers: TeamMember[] = [
     {
-        name: 'Alex Johnson',
-        role: 'Founder & CEO',
-        bio: 'With over 20 years in the construction and technology industries, Alex leads AJ Tech Solutions with a passion for innovation and quality.',
+        name: 'Aponi James',
+        role: 'Founder & Lead Engineer',
+        bio: 'The visionary behind A.J Tech, Aponi is an Electrical Engineering student at the University of Calabar with a passion for innovation and hands-on problem-solving.',
         image: 'team1',
     },
     {
-        name: 'Brenda Smith',
-        role: 'Head of Engineering',
-        bio: 'Brenda is a certified engineer specializing in renewable energy systems and sustainable building practices.',
+        name: 'Chioma Okeke',
+        role: 'Renewable Energy Specialist',
+        bio: 'A fellow engineering student at the University of Calabar, Chioma specializes in sustainable energy and leads our solar project analysis and design.',
         image: 'team2',
     },
     {
-        name: 'Charles Brown',
-        role: 'Chief Operations Officer',
-        bio: 'Charles ensures all projects are managed efficiently, from initial client contact to final handover, guaranteeing client satisfaction.',
+        name: 'Bayo Adekunle',
+        role: 'Construction & Safety Lead',
+        bio: 'Bayo studies Civil Engineering at the University of Calabar and ensures all our construction projects meet the highest standards of safety and structural integrity.',
         image: 'team3',
-    },
-    {
-        name: 'Diana Green',
-        role: 'Lead Electrician',
-        bio: 'Diana heads our electrical services division, with an uncanny ability to diagnose and fix complex electrical systems.',
-        image: 'team4',
     },
 ];
 
@@ -149,4 +143,3 @@ export const recentWork: RecentWork[] = [
     image: 'work3',
   }
 ];
-
