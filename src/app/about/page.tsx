@@ -11,7 +11,7 @@ const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 export default function AboutPage() {
   const founder = teamMembers.find(member => member.name === 'Aponi James');
   const otherMembers = teamMembers.filter(member => member.name !== 'Aponi James');
-  const founderImage = "https://storage.googleapis.com/gcs-public-prod.appspot.com/files/1e6878b2-b13c-4977-a878-3560f4e3c98a";
+  const founderImage = "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0024.jpg";
 
   return (
     <div className="container py-16 md:py-24 px-4 md:px-6">
