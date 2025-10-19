@@ -83,24 +83,6 @@
       "description": "Clean and organized electrical wiring in a new home under construction.",
       "imageUrl": "https://images.unsplash.com/photo-1581092918056-0c9c4e578018?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "electrical wiring"
-    },
-    {
-      "id": "team1",
-      "description": "Portrait of a confident young male engineer.",
-      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0024.jpg",
-      "imageHint": "male engineer"
-    },
-    {
-      "id": "team2",
-      "description": "Portrait of a smiling female engineering student.",
-      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0032.jpg",
-      "imageHint": "female engineer"
-    },
-    {
-      "id": "team3",
-      "description": "Portrait of a male construction lead in a hard hat.",
-      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0031.jpg",
-      "imageHint": "construction worker"
     }
   ]
 }
