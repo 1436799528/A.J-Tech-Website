@@ -39,7 +39,7 @@
     {
       "id": "construction1",
       "description": "Technician in action",
-      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/dcf020126deb9e47e13ff3af7568bf9b9843e651/public/images/jump%20photo.jpg",
+      "imageUrl": "https://magnifyelectric.com/wp-content/uploads/2020/09/IMG_0190_1-1-e1678393931180.jpg",
       "imageHint": "construction site"
     },
     {
@@ -93,13 +93,13 @@
     {
       "id": "team2",
       "description": "Portrait of a smiling female engineering student.",
-      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0032.jpg",
       "imageHint": "female engineer"
     },
     {
       "id": "team3",
       "description": "Portrait of a male construction lead in a hard hat.",
-      "imageUrl": "https://images.unsplash.com/photo-1520899723233-a2ffe9110431?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0031.jpg",
       "imageHint": "construction worker"
     }
   ]
