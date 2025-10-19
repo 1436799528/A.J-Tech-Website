@@ -76,6 +76,24 @@ const nextConfig: NextConfig = {
         hostname: 'raw.githubusercontent.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'structuralbeam.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'sitecapture.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ny-engineers.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
