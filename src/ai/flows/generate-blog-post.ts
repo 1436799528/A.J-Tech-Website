@@ -58,6 +58,7 @@ Guidelines:
 
 Begin writing now.`,
   config: {
+    model: 'googleai/gemini-2.5-flash',
     safetySettings: [
         {
             category: 'HARM_CATEGORY_DANGEROUS_CONTENT',
