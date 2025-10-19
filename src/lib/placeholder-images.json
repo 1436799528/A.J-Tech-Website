@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Engineer reviewing blueprints on a construction site",
-      "imageUrl": "https://images.unsplash.com/photo-1519756301029-33Fef702cd56?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "engineer blueprints"
+      "description": "An equipment operator expertly managing heavy machinery on a large construction project.",
+      "imageUrl": "https://cdn.prod.website-files.com/603998e53b870e0ccac4ebcc/681e06d36f3fce0a1cea70d8_Everything%20About%20Equipment%20Operators.webp",
+      "imageHint": "equipment operator"
     },
     {
       "id": "whyus",
