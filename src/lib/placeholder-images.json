@@ -8,9 +8,9 @@
     },
     {
       "id": "whyus",
-      "description": "A team of engineers collaborating on a project in a modern office.",
+      "description": "A graphic showcasing the core values of A.J. Tech Solutions: Safety, Reliability, and Quality.",
       "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/d06ce82069fcec7c0fcecf2213c675e658d97f65/public/images/Green%20And%20Orange%20Modern%20Electrical%20Service%20Instagram%20Post.png",
-      "imageHint": "engineers collaborating"
+      "imageHint": "company values"
     },
     {
       "id": "solar1",
@@ -19,28 +19,22 @@
       "imageHint": "solar panels"
     },
     {
-      "id": "solar4",
-      "description": "An installer securing a large-scale solar panel array on a rooftop.",
-      "imageUrl": "https://sitecapture.com/wp-content/uploads/2022/09/Top-3-essential-skills-of-the-ideal-solar-technician-1024x576.jpg",
-      "imageHint": "solar installation"
-    },
-    {
       "id": "contracting1",
-      "description": "A high-rise building under construction with a crane, illustrating a large-scale general contracting project.",
+      "description": "The steel frame of a new building being erected by contractors.",
       "imageUrl": "https://structuralbeam.com/wp-content/uploads/2022/03/Steel-framing-contractors-1024x576.jpg",
-      "imageHint": "contracting project"
+      "imageHint": "steel framing"
     },
     {
       "id": "repair1",
-      "description": "An electrician wearing protective gloves while working on a residential electrical panel.",
+      "description": "An electrician's hands carefully working inside a complex electrical service panel.",
       "imageUrl": "https://cosmosparks.com/wp-content/uploads/2021/10/Cosmosparks-ElectricaElectrical-Services.jpg",
       "imageHint": "electrician panel"
     },
     {
       "id": "construction1",
-      "description": "A large tower crane on a high-rise building construction site, representing building construction services.",
+      "description": "A large tower crane lifts materials on a high-rise construction site against the sky.",
       "imageUrl": "https://www.ny-engineers.com/hubfs/towercrane.jpg",
-      "imageHint": "construction site"
+      "imageHint": "construction crane"
     },
     {
       "id": "about-us",
@@ -68,61 +62,61 @@
     },
     {
       "id": "work1",
-      "description": "Brightly lit commercial warehouse with new LED fixtures.",
+      "description": "Brightly lit commercial warehouse with new energy-efficient LED fixtures.",
       "imageUrl": "https://passionelectric.com/wp-content/uploads/2021/09/led-lighting-upgrade.jpg",
       "imageHint": "warehouse lighting"
     },
     {
       "id": "work2",
-      "description": "Sunny day with solar panels gleaming on a residential rooftop.",
+      "description": "A residential home with a newly installed rooftop solar panel system on a sunny day.",
       "imageUrl": "https://images.unsplash.com/photo-1621495470433-7539651662a9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "rooftop solar"
     },
     {
       "id": "work3",
-      "description": "Clean and organized electrical wiring in a new home under construction.",
+      "description": "Neat and organized electrical wiring inside a new home during the construction phase.",
       "imageUrl": "https://images.unsplash.com/photo-1581092918056-0c9c4e578018?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "electrical wiring"
     },
     {
       "id": "solar-rooftop-2",
-      "description": "Clean solar panel installation on a modern rooftop.",
+      "description": "A clean and modern solar panel installation on a residential rooftop.",
       "imageUrl": "https://cdn.prod.website-files.com/635be7912a00d5eb858987f8/63ee88a6966ebb40dfb2c5e3_Roof%20top%201.png",
       "imageHint": "rooftop solar"
     },
     {
       "id": "solar-installer-work",
-      "description": "A solar technician working on rooftop panel mounts.",
+      "description": "A female solar technician in a hard hat working diligently on rooftop panel mounts.",
       "imageUrl": "https://www.solarpowerworldonline.com/wp-content/uploads/2017/01/Mouli-2-1000x1000.jpg",
       "imageHint": "solar technician"
     },
     {
       "id": "solar-farm-construction",
-      "description": "Construction of a new solar farm in a rural area.",
+      "description": "The initial phase of construction for a new ground-mounted solar farm.",
       "imageUrl": "https://transglobepower.com/wp-content/uploads/2017/03/farm-under-construction-300x174.jpg",
       "imageHint": "solar farm"
     },
     {
       "id": "solar-pv-installer",
-      "description": "A certified Solar PV installer working on a residential roof.",
+      "description": "A certified Solar PV installer wearing safety gear while working on a residential roof.",
       "imageUrl": "https://www.nccer.org/media/2023/03/Solar-PV-Installer-2e.jpg",
       "imageHint": "solar installer"
     },
     {
       "id": "construction-steel-frame",
-      "description": "A residential house built with a modern steel frame structure.",
+      "description": "A residential house built with a modern and durable steel frame structure.",
       "imageUrl": "https://structuralbeam.com/wp-content/uploads/2022/03/Steel-frame-house-1024x576.jpg",
       "imageHint": "steel frame"
     },
     {
       "id": "construction-heavy-equipment",
-      "description": "Heavy equipment, like a Komatsu excavator, operating on a construction site.",
+      "description": "A Komatsu excavator, a piece of heavy equipment, operating on a construction site.",
       "imageUrl": "https://mcitcnj.com/wp-content/uploads/2024/05/Komatsu-500x350-1543708-300x210.png",
       "imageHint": "heavy equipment"
     },
     {
       "id": "construction-operator",
-      "description": "An equipment operator managing heavy machinery on a construction project.",
+      "description": "An equipment operator expertly managing heavy machinery on a large construction project.",
       "imageUrl": "https://cdn.prod.website-files.com/603998e53b870e0ccac4ebcc/681e06d36f3fce0a1cea70d8_Everything%20About%20Equipment%20Operators.webp",
       "imageHint": "equipment operator"
     }
