@@ -61,6 +61,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   
   const postImage = post.image ? getImage(post.image) : null;
   
+  const isYouTubeVideo = post.video?.includes('youtube.com');
+  const isLocalVideo = post.video && !isYouTubeVideo;
+
   return (
     <article className="container py-16 md:py-24 px-4 md:px-6">
       <div className="max-w-4xl mx-auto">
@@ -91,7 +94,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </div>
         )}
         
-        {post.video && (
+        {isYouTubeVideo && (
             <div className="relative mb-12 w-full" style={{paddingBottom: '56.25%'}}>
                  <iframe
                     className="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl"
@@ -101,6 +104,19 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                     allowFullScreen
                 ></iframe>
             </div>
+        )}
+
+        {isLocalVideo && (
+          <div className="mb-12 w-full">
+            <video
+              className="w-full h-auto rounded-lg shadow-xl"
+              src={post.video}
+              controls
+              preload="metadata"
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
         )}
 
         <div className="prose max-w-none prose-h3:text-primary prose-a:text-primary hover:prose-a:text-primary/80 prose-p:text-sm prose-li:text-sm">

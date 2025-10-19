@@ -1,6 +1,25 @@
 
 [
   {
+    "slug": "day-in-the-life-engineer",
+    "title": "A Day in the Life of an Engineer: From the Field to the Office",
+    "date": "2025-08-10",
+    "author": "Aponi James",
+    "image": "about-us",
+    "video": "/video/Aponi vlog 3.mp4",
+    "excerpt": "Ever wonder what a day on the job looks like for an engineer? Join A.J. Tech Solutions for a behind-the-scenes look at the challenges and triumphs we encounter in the field.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "At A.J. Tech Solutions, our work is more than just a job—it's a passion for problem-solving and a commitment to building a better future. In this video, our founder, Aponi James, takes you along for a typical day, showcasing the blend of hands-on technical work, project management, and client collaboration that defines what we do."
+      },
+      {
+        "type": "paragraph",
+        "text": "From diagnosing complex electrical issues on-site to planning the next phase of a major construction project, every day brings new challenges. Watch as we navigate the unique landscape of our work, demonstrating the skill, dedication, and innovative thinking that our team brings to every task. This is a glimpse into the real-world application of engineering principles that power our communities."
+      }
+    ]
+  },
+  {
     "slug": "demystifying-solar-panel-roi",
     "title": "Demystifying Solar Panel ROI: A Complete Guide for Homeowners",
     "date": "2025-07-20",
