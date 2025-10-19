@@ -8,6 +8,7 @@ import type { BlogPost } from '@/lib/types';
 import fs from 'fs';
 import path from 'path';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { PlayCircle } from 'lucide-react';
 
 function getBlogPosts(): BlogPost[] {
   const filePath = path.join(process.cwd(), "data", "content.json");
@@ -36,15 +37,20 @@ export default function BlogPage() {
             <Card key={post.slug} className="flex flex-col overflow-hidden">
                {postImage && (
                 <Link href={`/blog/${post.slug}`}>
-                  <div className="relative h-56 w-full">
+                  <div className="relative h-56 w-full group">
                     <Image
                       src={postImage.imageUrl}
                       alt={post.title}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover"
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
                       data-ai-hint={postImage.imageHint}
                     />
+                    {post.video && (
+                      <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+                        <PlayCircle className="h-16 w-16 text-white/80 transform transition-transform duration-300 group-hover:scale-110" />
+                      </div>
+                    )}
                   </div>
                 </Link>
               )}
