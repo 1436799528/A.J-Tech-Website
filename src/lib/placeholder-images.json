@@ -39,7 +39,7 @@
     {
       "id": "construction1",
       "description": "Technician in action",
-      "imageUrl": "https://magnifyelectric.com/wp-content/uploads/2023/07/General-Contracting-in-South-Windsor-CT.jpg",
+      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/dcf020126deb9e47e13ff3af7568bf9b9843e651/public/images/jump%20photo.jpg",
       "imageHint": "construction site"
     },
     {
@@ -69,19 +69,19 @@
     {
       "id": "work1",
       "description": "Brightly lit commercial warehouse with new LED fixtures.",
-      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0030.jpg",
+      "imageUrl": "https://passionelectric.com/wp-content/uploads/2021/09/led-lighting-upgrade.jpg",
       "imageHint": "warehouse lighting"
     },
     {
       "id": "work2",
       "description": "Sunny day with solar panels gleaming on a residential rooftop.",
-      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0031.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1621495470433-7539651662a9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "rooftop solar"
     },
     {
       "id": "work3",
       "description": "Clean and organized electrical wiring in a new home under construction.",
-      "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0032.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1581092918056-0c9c4e578018?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "electrical wiring"
     },
     {
