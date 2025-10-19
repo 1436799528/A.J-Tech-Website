@@ -8,14 +8,14 @@
     },
     {
       "id": "whyus",
-      "description": "Company values graphic with icons for safety, reliability, and expertise.",
+      "description": "A team of engineers collaborating on a project in a modern office.",
       "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/d06ce82069fcec7c0fcecf2213c675e658d97f65/public/images/Green%20And%20Orange%20Modern%20Electrical%20Service%20Instagram%20Post.png",
-      "imageHint": "company values"
+      "imageHint": "engineers collaborating"
     },
     {
       "id": "solar1",
-      "description": "A solar technician installing a solar panel on a roof.",
-      "imageUrl": "https://sitecapture.com/wp-content/uploads/2022/09/Top-3-essential-skills-of-the-ideal-solar-technician-1024x576.jpg",
+      "description": "Expansive view of solar panels on a residential roof.",
+      "imageUrl": "https://www.need.org/wp-content/uploads/bb-plugin/cache/solar11-landscape-381a0a5178f0169dc8df9b17d5ece104-o491lcydt5rs.jpg",
       "imageHint": "solar panels"
     },
     {
@@ -44,13 +44,13 @@
     },
     {
       "id": "about-us",
-      "description": "An image of the A.J. Tech Solutions team.",
+      "description": "A group photo of the A.J. Tech Solutions team at an outdoor work site.",
       "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0025.jpg",
       "imageHint": "team photo"
     },
     {
       "id": "solar-roi",
-      "description": "A team member working on an electrical installation.",
+      "description": "A team member installing an electrical component on a wall.",
       "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0026.jpg",
       "imageHint": "electrical installation"
     },
@@ -62,9 +62,9 @@
     },
     {
       "id": "construction-trends",
-      "description": "A modern building with a facade of glass and steel, showing futuristic architectural design.",
+      "description": "An engineer working on wiring for a large-scale solar panel installation.",
       "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0029.jpg",
-      "imageHint": "modern architecture"
+      "imageHint": "solar engineering"
     },
     {
       "id": "work1",
