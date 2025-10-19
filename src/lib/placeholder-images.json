@@ -14,19 +14,19 @@
     },
     {
       "id": "solar1",
-      "description": "Expansive view of solar panels on a residential roof.",
+      "description": "Expansive view of solar panels on a residential roof under a clear blue sky.",
       "imageUrl": "https://www.need.org/wp-content/uploads/bb-plugin/cache/solar11-landscape-381a0a5178f0169dc8df9b17d5ece104-o491lcydt5rs.jpg",
       "imageHint": "solar panels"
     },
     {
       "id": "solar4",
-      "description": "An installer working on a large-scale solar panel array.",
-      "imageUrl": "https://goodwill-electrical.co.uk/wp-content/uploads/2022/04/solar-panel-installer-scaled.jpg",
+      "description": "An installer securing a large-scale solar panel array on a rooftop.",
+      "imageUrl": "https://sitecapture.com/wp-content/uploads/2022/09/Top-3-essential-skills-of-the-ideal-solar-technician-1024x576.jpg",
       "imageHint": "solar installation"
     },
     {
       "id": "contracting1",
-      "description": "A construction worker on a steel frame building project.",
+      "description": "Construction workers on a steel frame building project against a clear sky.",
       "imageUrl": "https://structuralbeam.com/wp-content/uploads/2022/03/Steel-framing-contractors-1024x576.jpg",
       "imageHint": "contracting project"
     },
@@ -83,6 +83,30 @@
       "description": "Clean and organized electrical wiring in a new home under construction.",
       "imageUrl": "https://images.unsplash.com/photo-1581092918056-0c9c4e578018?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "electrical wiring"
+    },
+    {
+      "id": "solar-rooftop-2",
+      "description": "Clean solar panel installation on a modern rooftop.",
+      "imageUrl": "https://cdn.prod.website-files.com/635be7912a00d5eb858987f8/63ee88a6966ebb40dfb2c5e3_Roof%20top%201.png",
+      "imageHint": "rooftop solar"
+    },
+    {
+      "id": "solar-installer-work",
+      "description": "A solar technician working on rooftop panel mounts.",
+      "imageUrl": "https://www.solarpowerworldonline.com/wp-content/uploads/2017/01/Mouli-2-1000x1000.jpg",
+      "imageHint": "solar technician"
+    },
+    {
+      "id": "solar-farm-construction",
+      "description": "Construction of a new solar farm in a rural area.",
+      "imageUrl": "https://transglobepower.com/wp-content/uploads/2017/03/farm-under-construction-300x174.jpg",
+      "imageHint": "solar farm"
+    },
+    {
+      "id": "solar-pv-installer",
+      "description": "A certified Solar PV installer working on a residential roof.",
+      "imageUrl": "https://www.nccer.org/media/2023/03/Solar-PV-Installer-2e.jpg",
+      "imageHint": "solar installer"
     }
   ]
 }

@@ -106,6 +106,30 @@ const nextConfig: NextConfig = {
         hostname: 'www.need.org',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.prod.website-files.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.solarpowerworldonline.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'transglobepower.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.nccer.org',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
