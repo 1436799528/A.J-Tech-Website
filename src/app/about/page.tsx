@@ -3,11 +3,12 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { teamMembers } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { User } from 'lucide-react';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
 export default function AboutPage() {
-  const aboutImage = getImage('about-us');
   const founder = teamMembers.find(member => member.name === 'Aponi James');
   const otherMembers = teamMembers.filter(member => member.name !== 'Aponi James');
 
@@ -28,14 +29,13 @@ export default function AboutPage() {
                  <h2 className="text-2xl md:text-3xl font-bold">Our Founder</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 items-center">
-                 {(() => {
-                    const founderImage = getImage(founder.image);
-                    return founderImage && (
-                        <div className="md:col-span-2 relative h-96 rounded-lg overflow-hidden shadow-xl w-full">
-                            <Image src={founderImage.imageUrl} alt={founder.name} fill className="object-cover" data-ai-hint={founderImage.imageHint}/>
+                <div className="md:col-span-2 flex justify-center">
+                    <Avatar className="h-64 w-64 border-4 border-primary/20 shadow-xl">
+                        <div className="flex h-full w-full items-center justify-center rounded-full bg-card">
+                            <User className="h-32 w-32 text-muted-foreground" />
                         </div>
-                    );
-                })()}
+                    </Avatar>
+                </div>
                 <div className="md:col-span-3">
                     <h3 className="text-2xl font-bold text-primary mb-2">{founder.name}</h3>
                     <p className="text-muted-foreground mb-4 text-sm md:text-base">
@@ -59,15 +59,14 @@ export default function AboutPage() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {otherMembers.map((member) => {
-            const memberImage = getImage(member.image);
             return (
               <Card key={member.name} className="text-center">
                 <CardContent className="pt-6">
-                  {memberImage && (
-                     <div className="relative h-40 w-40 rounded-full mx-auto mb-4 overflow-hidden shadow-lg">
-                        <Image src={memberImage.imageUrl} alt={member.name} fill className="object-cover" data-ai-hint={memberImage.imageHint} />
-                    </div>
-                  )}
+                    <Avatar className="h-40 w-40 mx-auto mb-4 border-2 border-primary/10 shadow-lg">
+                         <div className="flex h-full w-full items-center justify-center rounded-full bg-card">
+                            <User className="h-20 w-20 text-muted-foreground" />
+                        </div>
+                    </Avatar>
                   <CardHeader className="p-0">
                     <CardTitle className="text-xl">{member.name}</CardTitle>
                     <p className="text-primary font-semibold text-sm">{member.role}</p>
