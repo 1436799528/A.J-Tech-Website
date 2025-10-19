@@ -47,6 +47,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
                       src={image.imageUrl}
                       alt={image.description}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover"
                       data-ai-hint={image.imageHint}
                     />

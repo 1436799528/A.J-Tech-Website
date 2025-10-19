@@ -1,12 +1,9 @@
 
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { teamMembers } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { User } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-
-const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
 export default function AboutPage() {
   const founder = teamMembers.find(member => member.name === 'Aponi James');
@@ -68,6 +65,7 @@ export default function AboutPage() {
             src={teamPhotoUrl}
             alt="A.J. Tech Solutions Team"
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover"
             data-ai-hint="team photo"
           />

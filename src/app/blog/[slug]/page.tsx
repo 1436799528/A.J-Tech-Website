@@ -84,6 +84,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               src={postImage.imageUrl}
               alt={post.title}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover"
               data-ai-hint={postImage.imageHint}
             />

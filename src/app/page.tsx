@@ -27,6 +27,7 @@ export default function Home() {
             fill
             className="object-cover"
             priority
+            sizes="100vw"
             data-ai-hint={heroImage.imageHint}
           />
         )}
@@ -68,6 +69,7 @@ export default function Home() {
                         src={workImage.imageUrl}
                         alt={work.title}
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                         data-ai-hint={workImage.imageHint}
                       />
@@ -111,6 +113,7 @@ export default function Home() {
                                 src={serviceImage.imageUrl}
                                 alt={service.title}
                                 fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover"
                                 data-ai-hint={serviceImage.imageHint}
                                 />
@@ -224,7 +227,7 @@ export default function Home() {
             </div>
             {whyUsImage && (
               <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl w-full">
-                  <Image src={whyUsImage.imageUrl} alt={whyUsImage.description} fill className="object-cover rounded-lg" data-ai-hint={whyUsImage.imageHint} />
+                  <Image src={whyUsImage.imageUrl} alt={whyUsImage.description} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover rounded-lg" data-ai-hint={whyUsImage.imageHint} />
               </div>
             )}
         </div>
