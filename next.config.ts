@@ -94,6 +94,12 @@ const nextConfig: NextConfig = {
         hostname: 'ny-engineers.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.ny-engineers.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
