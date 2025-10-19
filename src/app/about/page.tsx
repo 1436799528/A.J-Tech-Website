@@ -12,6 +12,7 @@ export default function AboutPage() {
   const founder = teamMembers.find(member => member.name === 'Aponi James');
   const otherMembers = teamMembers.filter(member => member.name !== 'Aponi James');
   const founderImage = "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0024.jpg";
+  const teamPhotoUrl = "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/dcf020126deb9e47e13ff3af7568bf9b9843e651/public/images/General%20team%20photo.jpg";
 
   return (
     <div className="container py-16 md:py-24 px-4 md:px-6">
@@ -61,6 +62,21 @@ export default function AboutPage() {
                 Collaboration and expertise are at the heart of what we do.
             </p>
         </div>
+        
+        <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-2xl mb-16">
+          <Image
+            src={teamPhotoUrl}
+            alt="A.J. Tech Solutions Team"
+            fill
+            className="object-cover"
+            data-ai-hint="team photo"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          <div className="absolute bottom-0 left-0 p-6">
+            <h3 className="text-2xl font-bold text-white">Our Team, Our Strength</h3>
+          </div>
+        </div>
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {otherMembers.map((member) => {
             return (
