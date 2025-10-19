@@ -20,6 +20,51 @@
     ]
   },
   {
+    "slug": "project-showcase-aponis-nightmare",
+    "title": "Project Showcase: Aponi's Nightmare",
+    "date": "2025-08-09",
+    "author": "Aponi James",
+    "image": "work1",
+    "video": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/main/public/video/aponi%20nightmare.mp4",
+    "excerpt": "A look into one of our challenging but rewarding projects. See how the A.J. Tech Solutions team tackles complex problems head-on.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This video provides a raw, behind-the-scenes look at one of the more challenging projects we've undertaken. It highlights the problem-solving skills and perseverance required in the engineering field."
+      }
+    ]
+  },
+  {
+    "slug": "from-the-field-aponi-vlog-2",
+    "title": "From the Field: Aponi's Vlog 2",
+    "date": "2025-08-08",
+    "author": "Aponi James",
+    "image": "work2",
+    "video": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/main/public/video/aponi%20vlog%202.mp4",
+    "excerpt": "Join Aponi James on the job site in this installment of our vlog series. Discover the day-to-day realities of our engineering work.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "In this vlog, Aponi James gives another glimpse into the daily life at A.J. Tech Solutions. Follow along as he works through another project, showcasing our commitment to quality and excellence."
+      }
+    ]
+  },
+  {
+    "slug": "behind-the-scenes-aponi-vlog-5",
+    "title": "Behind the Scenes: Aponi's Vlog 5",
+    "date": "2025-08-07",
+    "author": "Aponi James",
+    "image": "work3",
+    "video": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/main/public/video/aponi%20vlog%205.mp4",
+    "excerpt": "Another exciting update from the field! Watch as the A.J. Tech team brings their expertise to a new challenge.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This video captures more of the hands-on work and technical skill that our team brings to every job. See our solutions in action in this latest video update."
+      }
+    ]
+  },
+  {
     "slug": "demystifying-solar-panel-roi",
     "title": "Demystifying Solar Panel ROI: A Complete Guide for Homeowners",
     "date": "2025-07-20",
@@ -115,3 +160,5 @@
     ]
   }
 ]
+
+    
