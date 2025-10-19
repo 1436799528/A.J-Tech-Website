@@ -26,31 +26,31 @@
     },
     {
       "id": "contracting1",
-      "description": "Construction workers on a steel frame building project against a clear sky.",
+      "description": "A high-rise building under construction with a crane, illustrating a large-scale general contracting project.",
       "imageUrl": "https://structuralbeam.com/wp-content/uploads/2022/03/Steel-framing-contractors-1024x576.jpg",
       "imageHint": "contracting project"
     },
     {
       "id": "repair1",
-      "description": "An electrician working on a residential electrical panel.",
+      "description": "An electrician wearing protective gloves while working on a residential electrical panel.",
       "imageUrl": "https://cosmosparks.com/wp-content/uploads/2021/10/Cosmosparks-ElectricaElectrical-Services.jpg",
       "imageHint": "electrician panel"
     },
     {
       "id": "construction1",
-      "description": "A large tower crane on a high-rise building construction site.",
+      "description": "A large tower crane on a high-rise building construction site, representing building construction services.",
       "imageUrl": "https://www.ny-engineers.com/hubfs/towercrane.jpg",
       "imageHint": "construction site"
     },
     {
       "id": "about-us",
-      "description": "A group photo of the A.J. Tech Solutions team at an outdoor work site.",
+      "description": "The A.J. Tech Solutions team working together on an electrical installation.",
       "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0025.jpg",
       "imageHint": "team photo"
     },
     {
       "id": "solar-roi",
-      "description": "A team member installing an electrical component on a wall.",
+      "description": "A team member installing an electrical component on a wall with precision.",
       "imageUrl": "https://raw.githubusercontent.com/1436799528/A.J-Tech-Website/fc47963151f11665bb806eed090977b7de0e798d/public/images/IMG-20251019-WA0026.jpg",
       "imageHint": "electrical installation"
     },
@@ -107,6 +107,24 @@
       "description": "A certified Solar PV installer working on a residential roof.",
       "imageUrl": "https://www.nccer.org/media/2023/03/Solar-PV-Installer-2e.jpg",
       "imageHint": "solar installer"
+    },
+    {
+      "id": "construction-steel-frame",
+      "description": "A residential house built with a modern steel frame structure.",
+      "imageUrl": "https://structuralbeam.com/wp-content/uploads/2022/03/Steel-frame-house-1024x576.jpg",
+      "imageHint": "steel frame"
+    },
+    {
+      "id": "construction-heavy-equipment",
+      "description": "Heavy equipment, like a Komatsu excavator, operating on a construction site.",
+      "imageUrl": "https://mcitcnj.com/wp-content/uploads/2024/05/Komatsu-500x350-1543708-300x210.png",
+      "imageHint": "heavy equipment"
+    },
+    {
+      "id": "construction-operator",
+      "description": "An equipment operator managing heavy machinery on a construction project.",
+      "imageUrl": "https://cdn.prod.website-files.com/603998e53b870e0ccac4ebcc/681e06d36f3fce0a1cea70d8_Everything%20About%20Equipment%20Operators.webp",
+      "imageHint": "equipment operator"
     }
   ]
 }

@@ -130,6 +130,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.nccer.org',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'mcitcnj.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

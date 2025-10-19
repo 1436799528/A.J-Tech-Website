@@ -37,7 +37,7 @@ export const services: Service[] = [
     Icon: Sun,
     description: 'Harness the power of the sun with our expert solar panel installation services for home and business.',
     longDescription: 'Our comprehensive solar installation service takes you from initial consultation to a fully operational solar power system. We handle site assessment, system design, panel mounting, inverter setup, and grid connection. Go green, save on energy bills, and increase your property value with a reliable solar solution tailored to your needs.',
-    gallery: ['solar1', 'solar4'],
+    gallery: ['solar1', 'solar4', 'solar-rooftop-2', 'solar-installer-work', 'solar-pv-installer'],
     color: 'text-green-500',
   },
   {
@@ -46,7 +46,7 @@ export const services: Service[] = [
     Icon: Wrench,
     description: 'From groundwork to finishing touches, we provide end-to-end solutions for new building constructions.',
     longDescription: 'We bring your architectural visions to life with our full-service building construction capabilities. Our experienced team manages everything from foundation and framing to electrical, plumbing, and interior finishing. We are committed to building durable, functional, and beautiful structures that stand the test of time.',
-    gallery: ['construction1'],
+    gallery: ['construction1', 'construction-steel-frame', 'construction-heavy-equipment', 'construction-operator'],
     color: 'text-red-500',
   },
 ];
