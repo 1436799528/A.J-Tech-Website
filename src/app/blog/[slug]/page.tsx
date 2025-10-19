@@ -20,7 +20,6 @@ function getBlogPosts(): BlogPost[] {
   }
 }
 
-const blogPosts = getBlogPosts();
 const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
 type Props = {
@@ -31,6 +30,7 @@ export async function generateMetadata(
   { params }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
+  const blogPosts = getBlogPosts();
   const post = blogPosts.find((p) => p.slug === params.slug);
  
   if (!post) {
@@ -47,12 +47,14 @@ export async function generateMetadata(
 }
 
 export async function generateStaticParams() {
+  const blogPosts = getBlogPosts();
   return blogPosts.map((post) => ({
     slug: post.slug,
   }));
 }
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
+  const blogPosts = getBlogPosts();
   const post = blogPosts.find((p) => p.slug === params.slug);
 
   if (!post) {
