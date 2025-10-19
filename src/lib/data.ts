@@ -58,9 +58,9 @@ export const teamMembers: TeamMember[] = [
         image: 'team1',
     },
     {
-        name: 'Chioma Okeke',
-        role: 'Renewable Energy Specialist',
-        bio: 'A fellow engineering student at the University of Calabar, Chioma specializes in sustainable energy and leads our solar project analysis and design.',
+        name: 'Alozie Gospower',
+        role: 'Managing Director',
+        bio: 'A 300-level Electrical Engineering student at the University of Calabar, Alozie brings sharp project management skills and strategic oversight to the team.',
         image: 'team2',
     },
     {
