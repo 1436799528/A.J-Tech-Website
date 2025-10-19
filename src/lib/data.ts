@@ -64,9 +64,9 @@ export const teamMembers: TeamMember[] = [
         image: 'team2',
     },
     {
-        name: 'Bayo Adekunle',
+        name: 'Emmanuel Adekunle',
         role: 'Construction & Safety Lead',
-        bio: 'Bayo studies Civil Engineering at the University of Calabar and ensures all our construction projects meet the highest standards of safety and structural integrity.',
+        bio: 'Emmanuel studies Civil Engineering at the University of Calabar and ensures all our construction projects meet the highest standards of safety and structural integrity.',
         image: 'team3',
     },
 ];

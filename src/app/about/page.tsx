@@ -4,13 +4,14 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { teamMembers } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { User } from 'lucide-react';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
 export default function AboutPage() {
   const founder = teamMembers.find(member => member.name === 'Aponi James');
   const otherMembers = teamMembers.filter(member => member.name !== 'Aponi James');
+  const founderImage = "https://storage.googleapis.com/gcs-public-prod.appspot.com/files/1e6878b2-b13c-4977-a878-3560f4e3c98a";
 
   return (
     <div className="container py-16 md:py-24 px-4 md:px-6">
@@ -31,9 +32,12 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 items-center">
                 <div className="md:col-span-2 flex justify-center">
                     <Avatar className="h-64 w-64 border-4 border-primary/20 shadow-xl">
-                        <div className="flex h-full w-full items-center justify-center rounded-full bg-card">
-                            <User className="h-32 w-32 text-muted-foreground" />
-                        </div>
+                        <AvatarImage src={founderImage} alt={founder.name} className="object-cover" />
+                        <AvatarFallback>
+                            <div className="flex h-full w-full items-center justify-center rounded-full bg-card">
+                                <User className="h-32 w-32 text-muted-foreground" />
+                            </div>
+                        </AvatarFallback>
                     </Avatar>
                 </div>
                 <div className="md:col-span-3">
