@@ -12,8 +12,9 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { generateBlogPostAction, type BlogWriterFormState } from './actions';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Loader2, Terminal } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
 import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
 
 const blogWriterFormSchema = z.object({
   topic: z.string().min(5, { message: 'Topic must be at least 5 characters.' }),
@@ -84,20 +85,20 @@ export default function BlogWriterPage() {
           <Card className="mt-8 shadow-lg">
             <CardHeader>
               <CardTitle>Generated Post</CardTitle>
-              <CardDescription>Review the generated content below. You can copy and paste it into your CMS.</CardDescription>
+              <CardDescription>Review and edit the generated content below. You can copy and paste it into your CMS.</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-2">
-                <Label>Title</Label>
-                <Input readOnly value={state.blogPost.title} />
+                <Label htmlFor="generated-title">Title</Label>
+                <Input id="generated-title" defaultValue={state.blogPost.title} />
               </div>
               <div className="space-y-2">
-                <Label>Excerpt</Label>
-                <Textarea readOnly value={state.blogPost.excerpt} className="min-h-[80px]" />
+                <Label htmlFor="generated-excerpt">Excerpt</Label>
+                <Textarea id="generated-excerpt" defaultValue={state.blogPost.excerpt} className="min-h-[80px]" />
               </div>
               <div className="space-y-2">
-                <Label>Content (JSON)</Label>
-                <Textarea readOnly value={JSON.stringify(state.blogPost.content, null, 2)} className="min-h-[300px] font-mono text-xs" />
+                <Label htmlFor="generated-content">Content (JSON)</Label>
+                <Textarea id="generated-content" defaultValue={JSON.stringify(state.blogPost.content, null, 2)} className="min-h-[300px] font-mono text-xs" />
               </div>
             </CardContent>
           </Card>
