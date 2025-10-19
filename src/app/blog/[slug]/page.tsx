@@ -81,7 +81,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </div>
         </header>
 
-        {postImage && !post.video && (
+        {postImage && !isLocalVideo && (
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden shadow-xl mb-12 w-full">
             <Image
               src={postImage.imageUrl}
