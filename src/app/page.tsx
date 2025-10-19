@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center text-center py-20 px-4">
+      <section className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center text-center p-4">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
@@ -30,8 +30,7 @@ export default function Home() {
             data-ai-hint={heroImage.imageHint}
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/50 to-transparent" />
-        <div className="relative z-10 max-w-4xl mx-auto">
+        <div className="relative z-10 max-w-4xl mx-auto p-8 rounded-lg bg-background/80 backdrop-blur-sm">
            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-foreground">
             Your Trusted Partner for <span className="text-primary">Safe & Reliable</span> Electrical Solutions
           </h1>
