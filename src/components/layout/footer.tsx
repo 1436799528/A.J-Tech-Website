@@ -25,9 +25,9 @@ export function Footer() {
               Powering innovation with expert electrical, solar, and construction services.
             </p>
             <div className="flex space-x-4 mt-6">
-              <Link href="#" aria-label="Twitter" className="text-muted-foreground hover:text-primary"><Twitter className="h-5 w-5" /></Link>
-              <Link href="#" aria-label="LinkedIn" className="text-muted-foreground hover:text-primary"><Linkedin className="h-5 w-5" /></Link>
-              <Link href="#" aria-label="Facebook" className="text-muted-foreground hover:text-primary"><Facebook className="h-5 w-5" /></Link>
+              <Link href="https://twitter.com/your-profile" aria-label="Twitter" className="text-muted-foreground hover:text-primary"><Twitter className="h-5 w-5" /></Link>
+              <Link href="https://linkedin.com/in/your-profile" aria-label="LinkedIn" className="text-muted-foreground hover:text-primary"><Linkedin className="h-5 w-5" /></Link>
+              <Link href="https://facebook.com/your-profile" aria-label="Facebook" className="text-muted-foreground hover:text-primary"><Facebook className="h-5 w-5" /></Link>
             </div>
           </div>
           
