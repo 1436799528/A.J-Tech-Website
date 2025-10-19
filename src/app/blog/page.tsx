@@ -7,6 +7,7 @@ import { format } from 'date-fns';
 import type { BlogPost } from '@/lib/types';
 import fs from 'fs';
 import path from 'path';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 function getBlogPosts(): BlogPost[] {
   const filePath = path.join(process.cwd(), "data", "content.json");
@@ -14,6 +15,8 @@ function getBlogPosts(): BlogPost[] {
   const posts: BlogPost[] = JSON.parse(fileData);
   return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
+
+const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
 export default function BlogPage() {
   const blogPosts = getBlogPosts();
@@ -28,16 +31,18 @@ export default function BlogPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogPosts.map((post) => {
+          const postImage = post.image ? getImage(post.image) : null;
           return (
             <Card key={post.slug} className="flex flex-col overflow-hidden">
-               {post.image && (
+               {postImage && (
                 <Link href={`/blog/${post.slug}`}>
                   <div className="relative h-56 w-full">
                     <Image
-                      src={post.image}
+                      src={postImage.imageUrl}
                       alt={post.title}
                       fill
                       className="object-cover"
+                      data-ai-hint={postImage.imageHint}
                     />
                   </div>
                 </Link>

@@ -7,6 +7,7 @@ import type { BlogPost } from '@/lib/types';
 import fs from 'fs';
 import path from 'path';
 import { Metadata, ResolvingMetadata } from 'next';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 function getBlogPosts(): BlogPost[] {
   const filePath = path.join(process.cwd(), "data", "content.json");
@@ -20,6 +21,7 @@ function getBlogPosts(): BlogPost[] {
 }
 
 const blogPosts = getBlogPosts();
+const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
 type Props = {
   params: { slug: string }
@@ -57,6 +59,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     notFound();
   }
   
+  const postImage = post.image ? getImage(post.image) : null;
+  
   return (
     <article className="container py-16 md:py-24 px-4 md:px-6">
       <div className="max-w-4xl mx-auto">
@@ -74,13 +78,14 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </div>
         </header>
 
-        {post.image && (
+        {postImage && (
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden shadow-xl mb-12 w-full">
             <Image
-              src={post.image}
+              src={postImage.imageUrl}
               alt={post.title}
               fill
               className="object-cover"
+              data-ai-hint={postImage.imageHint}
             />
           </div>
         )}
